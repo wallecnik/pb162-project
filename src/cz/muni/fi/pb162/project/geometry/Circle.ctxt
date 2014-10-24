@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=center\ r
+comment0.target=Circle(Vertex2D,\ double)
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Circle\n\ \n\ @param\ center\ object\ of\ type\ Vertex2D\ for\ center\ of\ this\ circle\n\ @param\ r\ \ \ \ \ \ double\ number\ for\ radius\ of\ this\ circle\n
+comment1.params=
+comment1.target=Circle()
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Circle\n\n\ Creates\ circle\ in\ the\ [0,0]\ center\ with\ radius\ 1\n
+comment2.params=center
+comment2.target=Circle(Vertex2D)
+comment2.text=\n\ Constructor\ for\ object\ of\ class\ GeneralRegularPolygon\n\n\ @param\ center\ center\ of\ this\ polygon\n
+comment3.params=
+comment3.target=java.lang.String\ toString()
+comment3.text=\n\ Returns\ nicely\ formatted\ string\ with\ center\ and\ radius\ of\ this\ circle\n\ \n\ @return\ \ string\ with\ center\ and\ radius\ of\ this\ circle\n
+comment4.params=
+comment4.target=double\ getRadius()
+comment5.params=
+comment5.target=double\ getArea()
+comment5.text=\n\ Return\ area\ of\ a\ solid\ object.\n\n\ @return\ Area\n
+comment6.params=
+comment6.target=double\ getLength()
+comment6.text=\n\ Returns\ perimeter\ of\ this\ circle\n\n\ @return\ perimeter\ of\ this\ circle\n
+numComments=7

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        Cvičení zaměřené na práci s podmíněným výrazem (if), definici vlastních konstruktorů a jejich přetěžování.
+        
+        <h3>Úkoly s jednotkovými testy:</h3>
+        <ol>
+            <li>
+                Upravte třídu <code>Vertex2D</code> následujícím způsobem:
+                <ul>
+                    <li>
+                        Přidejte konstruktor, který bude mít dva parametry 
+                        s hodnotami souřadnic <i>X</i> a <i>Y</i>.
+                    </li>
+                    <li>
+                        Zrušte settery. Již nebudou potřeba, protože 
+                        souřadnice se nastavují konstruktorem při vzniku objektu.
+                        Tímto se zajistí, že souřadnice nelze měnit.
+                    </li>
+                    <li>
+                        Přidejte metodu <code>distance</code>, která vezme jiný 2D bod jako vstupní parametr 
+                        a vrátí jeho euklidovskou vzdálenost.
+                        Vzdálenost bodů se vypočítá jako<br/><img src="02a.png"><br/>
+                        Pokud je vstupní argument <code>null</code>, pak metoda vrátí hodnotu
+                        <code>-1.0</code> jako indikátor chyby (euklidovská vzdálenost je vždy >= 0).
+                    </li>
+                    <li>
+                        <b>Pozn.:</b>V Javě se odmocnina vypočítá pomocí volání <code>Math.sqrt()</code>.
+                    </li>
+                    
+                </ul>
+            </li>
+
+            <li>
+                Upravte třídu <code>Triangle</code> následujícím způsobem:
+                <ul>
+                    <li>
+                        Přidejte do třídy konstruktor, který bude mít tři parametry 
+                        s vrcholy <i>A</i>, <i>B</i> a <i>C</i>.
+                    </li>
+                    <li>
+                        Opět zrušte všechny set metody (gettery ponechte). Tímto se opět zajistí, 
+                        že vrcholy trojúhelníka nelze změnit.
+                    </li>
+                    <li>
+                        Upravte metodu <code>divide()</code> tak, aby šla přeložit.
+                    </li>
+                    <li>
+                        Upravte metodu <code>toString()</code> tak, aby nemohla zhavarovat
+                        na <code>NullPointerException</code>. Pokud některý z vrcholů chybí,
+                        vrátí metoda textový řetězec "INVALID TRIANGLE".
+                    </li>
+                    <li>Přidejte metodu <code>boolean isEquilateral()</code>, která vrátí <code>true</code> jestliže je 
+                        trojúhelník rovnostranný. Protože pracujeme s reálnými čísly, nelze jednoduše porovnat 
+                        délky stran např. pomocí <code>d1 == d2</code>. Je nutné použít test, který bude 
+                        považovat dvě reálná čísla za shodná, pokud jsou dostatečně podobná např. takto: 
+                        <pre>Math.abs(d1-d2) &lt; 0.001</pre> kde <code>0.001</code> je tolerovaná odchylka.
+                    </li>
+                    <li>
+                        <b>Pozn. pro cvičící:</b> Vysvětlete problém porovnávání reálných čísel
+                        a s tím související výraz <code>Math.abs(d1-d2) &lt; 0.001</code>.
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                Upravte třídu <code>Demo</code> tak, aby využívala nové konstruktory (tj. tak, aby šla třída přeložit).
+            </li>
+            
+            <li>
+                Vytvořte třídu <code>Circle</code>. 
+                <ul>
+                    <li>
+                        Třída bude mít konstruktor se dvěma parametry (v tomto pořadí):
+                        střed typu <code>Vertex2D</code> a poloměr typu <code>double</code>.
+                    </li>
+                    <li>
+                        Třída bude mít dále bezparametrický konstruktor, který
+                        vytvoří jednotkovou kružnici se středem v počátku souřadného systému 
+                        (tj. střed [0,0], poloměr 1). <b>Bezparametrický konstruktor bude volat 
+                        předchozí konstruktor</b> s parametry a předá mu potřebné konstanty!
+                    </li>
+                    <li>
+                        Pro poloměr a střed vytvořte gettry <code>getRadius()</code>
+                        a <code>getCenter()</code>.
+                    </li>
+                    <li>
+                        Metoda <code>toString</code> bude vracet řetězec ve formátu 
+                        <code>"Circle: center=[x, y], radius=&lt;radius&gt;"</code>,
+                        kde <code>[x, y]</code> jsou souřadnice středu a <code>&lt;radius&gt;</code> je poloměr.
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                Pokud jste implementaci provedli bez chyb, tak po spuštění třídy <code>Draw</code> 
+                se na obrazovce vykreslí modrý trojúhelník a oranžová kružnice.
+            </li>
+        </ol>
+        
+        <h3>Úkoly bez jednotkových testů:</h3>
+        <ol>
+            <li>
+		Smažte třídu <code>DemoExtra01</code>, pokud ji v projektu stále ještě máte.
+            </li>
+            <li>
+                Upravte třídu <code>Triangle</code> tak, aby reprezentoval tzv. "Sierpinski triangle",
+                viz <a href="http://en.wikipedia.org/wiki/Sierpinski_triangle">Wikipedia</a>. 
+                <br/><img src="02b.png">
+                <br/>Konkrétně:
+                <ul>
+                    <li>
+                        Vytvořte přetíženou metodu <code>divide(int depth)</code>. 
+                        Metoda bude rekurzivní, parametr <code>depth</code> udává
+                        rekurzivní hloubku dělení trojúhelníka. Pokud je hodnota větší než nula, dojde k 
+                        rozdělení pomocí původní metody <code>divide()</code>.
+                        Poté se zavolá metoda <code>divide(int depth)</code> na všech třech nově vzniklých 
+                        trojúhelnících s hodnotou parametru o jedničku menší. Pokud je hodnota vstupního 
+                        parametru menší nebo rovna nule, trojúhelník se již dále nedělí.
+                    </li>
+                    <li>
+                        Vytvořte přetížený konstruktor, který (kromě tří vrcholů) bude jako
+                        čtvrtý argument brát požadovanou hloubku rekurzivního dělení. Konstruktor tedy
+                        rovnou vytvoří Sierpinského trojúhelník s požadovanou hloubkou. Vyhněte 
+                        se zbytečnému opakování kódu tím, že nový konstruktor bude volat 
+                        původní konstruktor (se třemi parametry).
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Odkomentujte kód ve třídě <code>DemoExtra02</code>. Spuštěním této třídy zajistíte vykreslení 
+                Sierpinského trojúhelníka úrovně 5.
+            </li>
+            <!-- <li>
+                ??? Námět: Vykreslení Sphere flake fractal ???
+                ??? Námět: Composite GoF na procházení/zobrazení fraktálu ???
+            </li> -->
+        </ol>
+    </body>
+</html>

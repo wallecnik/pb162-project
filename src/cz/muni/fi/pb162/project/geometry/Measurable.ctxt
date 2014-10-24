@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=double\ getWidth()
+comment0.text=\n\ Returns\ the\ width\ of\ the\ object,\ \n\ i.e.\ the\ width\ of\ the\ smallest\ bounding\ rectangle.\n\ \n\ @return\ object's\ width\n
+comment1.params=
+comment1.target=double\ getHeight()
+comment1.text=\n\ Returns\ the\ height\ of\ the\ object,\ \n\ i.e.\ the\ height\ of\ the\ smallest\ bounding\ rectangle.\n\ \n\ @return\ object's\ height\n
+comment2.params=
+comment2.target=double\ getLength()
+comment2.text=\n\ Returns\ either\ the\ length\ of\ open\ 2D\ geometry\ (e.g.\ the\ length\ of\ a\ polyline)\ \n\ or\ the\ perimeter\ of\ enclosed\ 2D\ object\ (e.g.\ the\ perimeter\ of\ a\ polygon).\n\ \n\ @return\ length\ or\ perimeter\n
+numComments=3

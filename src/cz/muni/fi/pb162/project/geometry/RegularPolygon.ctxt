@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=int\ getNumEdges()
+comment0.text=\n\ Returns\ number\ of\ edges\ of\ the\ regular\ polygon.\n\ \n\ @return\ number\ of\ edges\n
+comment1.params=
+comment1.target=double\ getEdgeLength()
+comment1.text=\n\ Returns\ length\ of\ single\ edge.\n\ \n\ @return\ edge\ length\n
+comment2.params=
+comment2.target=Vertex2D\ getCenter()
+comment2.text=\n\ Returns\ center\ of\ the\ minimum\ bounding\ circle.\n\ \n\ @return\ center\ of\ the\ minimum\ bounding\ circle\n
+comment3.params=
+comment3.target=double\ getRadius()
+comment3.text=\n\ Returns\ radius\ of\ the\ minimum\ bounding\ circle.\n\ \n\ @return\ radius\ of\ the\ minimum\ bounding\ circle\n
+numComments=4

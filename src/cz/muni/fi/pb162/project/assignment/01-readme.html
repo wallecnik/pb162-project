@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        Cvičení zaměřené na základní práci s atributy, metodami a na instanciaci tříd (bez vlastních konstruktorů).
+        
+        <h3>Úkoly s jednotkovými testy:</h3>
+        <ol>
+            <li>
+                Vytvořte třídu <code>Vertex2D</code> představující bod v 2D prostoru se souřadnicemi X a Y.
+                Třída nebude mít definovaný žádný konstruktor (prozatím není potřeba)!
+                <ul>
+                    <li>Třída bude v balíku <code>cz.muni.fi.pb162.project.geometry</code>.</li>
+                    <li>Třída bude mít dva atributy typu <code>double</code>, ve kterých si bude uchovávat hodnoty souřadnic 
+                        <code>X</code> a <code>Y</code>.</li>
+                    <li>Přidejte do třídy tzv. "gettery" a "settery", tj. metody 
+                        <code>double getX()</code> a <code>double getY()</code> pro získání hodnot atributů a
+                        <code>void setX(double newX)</code> a <code>void setY(double newY)</code> pro nastavení 
+                        hodnot atributů.</li>
+                    <li>Metoda <code>String toString()</code> vrátí <code>[X, Y]</code>, 
+                        tj. souřadnice bodu v hranatých závorkách.</li>
+                    <li>
+                        <b>Pozn. pro cvičící:</b> Vysvětlit princip getterů a setterů. Pravidla pro jejich pojmenování. Zdůraznit, že nastavují/vrací
+                        vždy jen hodnotu jediného atributu.
+                    </li>
+                </ul>
+            </li>
+            
+            <li>
+                Vytvořte třídu <code>Triangle</code>.
+                Třída nebude mít definovaný žádný konstuktor (prozatím není potřeba)!
+                <ul>                        
+                    <li>Třída bude v balíku <code>cz.muni.fi.pb162.project.geometry</code>.</li>
+                    <li>Trojúhelník se skládá ze tří vrcholů <i>A, B</i> a <i>C</i> 
+                        (instance třídy <code>Vertex2D</code>).</li>
+                    <li>Metoda <code>void setVertexA(Vertex2D vert)</code> nastaví souřadnice vrcholu <i>A</i>.
+                        Podobně přidejte metody <code>setVertexB</code> a <code>setVertexC</code>.</li>
+                    <li>Metoda <code>Vertex2D getVertexA()</code> vrátí vrchol <i>A</i>. Podobně přidejte metody 
+                        <code>getVertexB</code> a <code>getVertexC</code>.</li>
+                    <li>Metoda <code>String toString()</code> vrátí řetězec 
+                        <code>"Triangle: vertices=[ax, ay] [bx, by] [cx, cy]"</code>.</li>
+                </ul>
+            </li>
+            
+            <li>
+                Upravte třídu <code>Demo</code> v balíku <code>cz.muni.fi.pb162.project.demo</code> 
+                následujícím způsobem:
+                <ul>
+                    <li>Zrušte výpis textu <code>"Hello World!"</code>.</li>
+                    <li>Třída vytvoří trojúhelník se souřadnicemi <i>[-100, 0] [0, 100] [100, -100]</i>.</li>
+                    <li>Na std. výstup vypíše informace o trojúhelníku. Po spuštění by výstup měl vypadat takto:
+                        <pre>
+     Triangle: vertices=[-100.0, 0.0] [0.0, 100.0] [100.0, -100.0]</pre>
+                    </li>
+                    <li><b>Pozn. pro cvičící:</b> Vysvětlete studentům import tříd z jiného balíku.</li>
+                </ul>
+            </li>
+
+            <li>
+                Pokud jste implementaci provedli bez chyb, tak po spuštění třídy <code>Draw</code> 
+                se na obrazovce vykreslí trojúhelník.
+            </li>
+        </ol>
+        
+        <h3>Úkoly bez jednotkových testů:</h3>
+        <ol>
+            <li>Upravte třídu <code>Triangle</code> tak, aby se dal trojúhelník
+                rozdělit na čtyři stejně velké části takto (vlevo je původní trojúhelník, vpravo rozdělený):
+                <br/><center><img src="01b.png"/></center><br/>
+                Toto rozdělení se používá např. jako základní krok při tvorbě 
+                tzv. <a href="http://en.wikipedia.org/wiki/Sierpinski_triangle" target="_blank">Sierpinského trojúhelníka</a>.
+                Konkrétně proveďte tyto úpravy:
+                <ul>
+                    <li>Třída <code>Triangle</code> se bude pomocí atributů odkazovat na tři
+                        menší černé trojúhelníky. Na začátku jsou atributy prázdné (rozdělení zatím
+                        nebylo provedeno).</li>
+                    <li>Metoda <code>boolean isDivided()</code> zjistí, jestli již došlo k rozdělení 
+                        trojúhelníka.</li>
+                    <li>Metoda <code>getSubTriangle(int i)</code> vrátí i-tý podtrojúhelník, kde <code>i</code>
+                        je číslo mezi 0 a 2. Pokud <code>i</code> je mimo tento rozsah, nebo pokud trojúhelník
+                        není dosud rozdělen, vrátí metoda <code>null</code></li>
+                    <li>Metoda <code>boolean divide()</code> rozdělí trojúhelník, tj. vytvoří tři menší trojúhelníky, uloží je
+                        do atributů a vrátí <code>true</code>. Pokud již trojúhelník byl rozdělen,
+                        metoda neprovede nic a jen vrátí <code>false</code>.
+                        Vrcholy menších trojúhelníků jsou vždy v polovině délky stran 
+                        původního trojúhelníka. Střed hrany (úsečky) má souřadnice 
+                        <i>[(x<sub>1</sub>+x<sub>2</sub>)/2, (y<sub>1</sub>+y<sub>2</sub>)/2]</i>, 
+                        kde <i>[x<sub>1</sub>, y<sub>1</sub>]</i> a 
+                        <i>[x<sub>2</sub>, y<sub>2</sub>]</i> jsou vrcholy trojúhelníka.</li>
+                </ul>                   
+            </li>
+            <li>
+                Odkomentujte kód ve třídě <code>DemoExtra01</code>. Spuštěním této třídy zajistíte vykreslení 
+                trojúhelníka včetně jeho podčástí (kód třídy <code>DemoExtra01</code> používá konstrukce, které ještě neznáte).
+            </li>
+        </ol>
+    </body>
+</html>
