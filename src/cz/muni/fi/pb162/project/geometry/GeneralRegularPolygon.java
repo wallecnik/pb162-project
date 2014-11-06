@@ -29,15 +29,25 @@ public class GeneralRegularPolygon implements RegularPolygon, Colored {
 
     }
 
-    public String getColor() { return this.color; }
+    public String getColor() {
+        return this.color;
+    }
 
-    public void setColor(String color) { this.color = color; }
+    public void setColor(String color) {
+        this.color = color;
+    }
 
-    public int getNumEdges() { return this.numEdges; }
+    public int getNumEdges() {
+        return this.numEdges;
+    }
 
-    public double getEdgeLength() { return this.edgeLenght; }
+    public double getEdgeLength() {
+        return this.edgeLenght;
+    }
 
-    public Vertex2D getCenter() { return this.center; }
+    public Vertex2D getCenter() {
+        return this.center;
+    }
 
     /**
      * Returns radius of the minimum bounding circle.

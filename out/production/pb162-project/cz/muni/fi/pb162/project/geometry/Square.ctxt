@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=center\ edgeLenght
+comment0.target=Square(Vertex2D,\ double)
+comment0.text=\n\ Constructor\ for\ object\ of\ class\ Square\n\n\ @param\ center\ \ \ \ \ center\ of\ this\ square\n\ @param\ edgeLenght\ length\ of\ the\ edges\ of\ this\ square\n
+comment1.params=radius\ center
+comment1.target=Square(double,\ Vertex2D)
+comment1.text=\n\ Constructor\ for\ object\ of\ class\ Square\n\n\ @param\ radius\ radius\ of\ the\ minimum\ bounding\ circle\n\ @param\ center\ center\ of\ this\ square\n
+numComments=2

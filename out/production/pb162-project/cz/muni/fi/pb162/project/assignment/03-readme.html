@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        Cvičení zaměřené na implementaci a použití rozhraní.
+        
+        <h3>Úkoly s jednotkovými testy:</h3>
+        <ol>
+            <!--
+            <li>
+                Upravte třídy <code>Triangle</code> a <code>Circle</code> tak, 
+                aby implementovaly rozhraní <code>Colored</code>.
+                <ul>
+                    <li>Implicitní barva je ve všech případech bílá (textový řetězec <i>"white"</i>).</li>
+                    <li>Metody <code>String toString()</code> v sobě budou obsahovat i barvu 
+                        (<code>&lt;color&gt;</code> je název barvy):
+                        <pre>
+"Triangle: vertices=[ax,ay] [bx,by] [cx,cy], color=&lt;color&gt;"
+"Circle: center=[&lt;center&gt;], radius=&lt;radius&gt;, color=&lt;color&gt;"</pre>
+                 </ul>
+            </li>
+            -->
+            
+            <li>
+                Upravte třídy <code>Triangle</code> a <code>Circle</code> tak, 
+                aby implementovaly i rozhraní <code>Solid</code>.
+                <ul>
+                    <li>
+                        Obsah trojúhelníku <code>S</code> se vypočítá následovně, ostatní vzorečky 
+                        pro výpočet obvodu a obsahu viz základní škola:<br/>
+                        <code>s = o/2</code>, kde <code>o</code> je obvod trojúhelníka<br/>
+                        <code>S = sqrt(s * (s-d1) * (s-d2) * (s-d3))</code>, kde <code>sqrt</code> 
+                        je druhá odmocnina a <code>d1, d2, d3</code> jsou délky stran.
+                    </li>                    
+                    <li>
+                        Výška/šířka trojúhelníku se vypočítá jako rozdíl maximální a minimální
+                        x-ové (u šířky) respektive y-ové (u výšky) souřadnice vrcholů.
+                        <img src="03a.png" alt="">
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                Vytvořte třídu <code>Gauger</code> ("měřidlo") se dvěma statickými přetíženými 
+                metodami <code>printMeasurement:</code>
+                <ul>
+                    <li>První metoda vezme libovolný měřitelný objekt (tj. libovolný objekt implementující 
+                        rozhraní <code>Measurable</code>) a
+                        <ul>
+                            <li>a) na std. výstup vypíše informace o objektu, viz metoda <code>toString()</code>,</li>
+                            <li>b) na další řádek vypíše <i>"Length/Perimeter: &lt;n&gt;"</i>, kde &lt;n&gt; je obvod.</li>
+                        </ul>
+                    </li>
+                    <li>Druhá metoda vezme libovolný celistvý objekt (tj. libovolný objekt implementující rozhraní <code>Solid</code>) a
+                        <ul>
+                            <li>a) na std. výstup vypíše informace o objektu, viz metoda <code>toString()</code>,</li>
+                            <li>b) na další řádek vypíše <i>"Length/Perimeter: &lt;n&gt;"</i>, kde &lt;n&gt; je obvod objektu,</li>
+                            <li>c) na další řádek vypíše <i>"Area: &lt;m&gt;"</i>, kde &lt;m&gt; je obsah objektu.</li>
+                        </ul>
+                    </li>
+                    <li>Vyhněte se opakování kódu tím, že druhá variata metody bude volat tu první.
+                        Pozor ale, ať nevolá sebe sama. Došlo by k zacyklení (<code>StackOverflowException</code>).</li>
+                </ul> 
+            </li>
+            
+            <li>
+                V metodě <code>isEquilateral</code> třídy <code>Triangle</code> používáme číslo <code>0.001</code> 
+                jako povolenou odchylku dvou reálných čísel (tzv. epsilon). Definujte tuto hodnotu jako 
+                <b>veřejnou konstantu</b> třídy <code>Triangle</code> a upravte adekvátně tomu kód metody.
+            </li>
+            
+        </ol>
+        
+        <h3>Úkoly bez jednotkových testů:</h3>
+        <ol>
+            <li>
+                Smažte třídu <code>DrawExtra02</code>, pokud ji v projektu stále máte.
+            </li>
+            <li>
+                Vytvořte třídu <code>Snowman</code> (sněhulák). Sněhulák se skládá 
+                ze tří kružnic "postavených na sebe", směrem nahoru se kružnice zmenšují.
+                Konstruktor bude jako svůj první parametr brát poloměr spodní koule
+                a jako druhý parametr zmenšovací faktor pro koule nad ní (reálné číslo
+                o rozsahu <code>(0..1&gt;</code>). V případě, že vstupní parametr nebude z požadovaného rozsahu,
+                použije se hodnota <code>0.8</code>.
+                <p/>
+                Ruce sněhuláka (opět kružnice) budou mít poloviční velikost oproti prostřední kružnici.
+                <p/>
+                Celý sněhulák vznikne v konstruktoru, nebojte se ale 
+                kód rozdělit do menších pomocných metod s viditelností <code>private</code>.
+            </li>
+            <li>
+                Pro všech pět koulí vytvořte get metody s názvy <code>getBottomBall</code>,
+                <code>getMiddleBall</code>, <code>getTopBall</code>, 
+                <code>getLeftHandBall</code> a <code>getRightHandBall</code>.
+                Všechny metody budou vracet kružnici.
+            </li>
+            <li>
+                Odkomentujte kód ve třídě <code>DrawExtra03</code>. Spuštěním této třídy zajistíte vykreslení 
+                sněhuláka.
+            </li>
+        </ol>
+    </body>
+</html>

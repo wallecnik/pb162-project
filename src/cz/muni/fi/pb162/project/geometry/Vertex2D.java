@@ -59,7 +59,7 @@ public class Vertex2D {
         
     }
 
-    public double getX(){
+    public double getX() {
         return this.x;
     }
     

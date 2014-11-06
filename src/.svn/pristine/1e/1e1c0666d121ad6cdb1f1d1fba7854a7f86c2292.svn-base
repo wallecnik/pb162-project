@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        
+        Mezi 2D geometrie patří tzv. pravidelné n-úhelníky (anglicky <i>regular polygons</i>,
+        nebo zkráceně <i>n-gons</i>), 
+        viz <a href="http://cs.wikipedia.org/wiki/Pravideln%C3%BD_mnoho%C3%BAheln%C3%ADk">Wikipedia</a>.
+        <br/><img src="04a.png" alt=""/><br/>
+        Jsou to pravidelné hranaté konvexní objekty, které mají všechny strany stejně dlouhé.
+        Lze jimi opsat kružnici, která prochází všemi vrcholy. Mezi tyto objekty patří
+        např. rovnostranný trojúhelník, čtverec, pravidelný pětiúhelník, atd. 
+        Dá se mezi ně zařadit i kružnice jakožto n-úhelník s nekonečně mnoha nekonečně 
+        malými hranami (naopak každý pravidelný n-úhelník aproximuje kružnici -- 
+        čím víc hran, tím je aproximace přesnější).
+        
+        <h3>Úkoly s jednotkovými testy:</h3>
+        <ol>
+            <li>
+                V balíku <code>geometry</code> vytvořte třídu <code>GeneralRegularPolygon</code> implementující rozhraní 
+                <code>RegularPolygon</code> a <code>Colored</code>. Tato třída pak bude sloužit 
+                jako společná nadtřída pro všechny pravidelné n-úhelníky.
+                <ul>
+                    <li>
+                        Pravidelný n-úhelník je definován svým středem a počtem a délkou hran.
+                        Konstruktor proto bude mít právě tyto tři parametry (v uvedeném pořadí).
+                        Implicitní barva je černá ("black").
+                    </li>
+                    <li>
+                        Poloměr opsané kružnice se vypočítá jako:
+                        <br/><img src="04b.png" alt="r = s / (2 * sin(PI/n))"/>,<br/>
+                        kde <code>s</code> je délka hran a <code>n</code> je počet hran.
+                    </li>
+                    <li>
+                        Obsah pravidelného n-úhelníka:
+                        <br/><img src="04c.png" alt="S = 0.5 * (n * r * r * sin(PI/n))"/>,<br/>
+                        kde <code>r</code> je poloměr opsané kružnice a <code>n</code> je počet hran.
+                    </li>
+                    <li>
+                        Šířka a výška pravidelného n-úhelníka se pro jednoduchost spočítá jako průměr opsané kružnice.
+                    </li>
+                    <li>
+                        Potřebné matematické funkce a konstanty naleznete ve třídě <code>java.lang.Math</code>.
+                    </li>
+                    <li>
+                        Metoda <code>toString</code> bude vracet 
+                        <i>"&lt;n&gt;-gon: center=[&lt;center&gt;], edge length=&lt;length&gt;, color=&lt;color&gt;"</i>, 
+                        kde &lt;n&gt; je počet hran, &lt;center&gt; jsou souřadnice středu, &lt;length&gt; je jejich délka a &lt;color&gt; je barva.
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                V balíku <code>geometry</code> vytvořte třídu <code>RegularOctagon</code> pro pravidelný osmiúhelník rozšiřující <code>GeneralRegularPolygon</code>.
+            </li>
+            
+            <li>
+                Upravte třídu <code>Circle</code> tak, aby rozšiřovala třídu <code>GeneralRegularPolygon</code>.
+                <ul>
+                    <li>Počet hran kružnice je <i>maximální celé číslo</i>.</li>
+                    <li>Délka hran kružnice je 0.</li>
+                    <li>Kružnice se i nadále bude konstruovat zadáním středu a ploměru, respektive jako jednotková kružnice.</li>
+                    <li>Zděděná metoda <code>getRadius()</code> by pro naši kružnici nefungovala, protože
+                        délka hran je 0. Proto musí třída tuto metodu vhodným způsobem překrýt.</li>
+                    <li>Výpočet obvodu a obsahu bude rovněž překryt. Obě hodnoty se budou počítat původními vzorci 
+                        pro kruh, nikoliv obecnými vzorci pro pravidelný n-úhelník.</li>
+                    <li>Třída bude obsahovat původní metodu <code>toString</code></li>
+                    <li>"Pročistěte třídu", tj. smažte všechny nepotřebné atributy, metody překryté beze změny, apod.</li>
+                </ul>
+            </li>
+            
+            <li>
+                Pokud jste implementaci provedli bez chyb, tak po spuštění třídy <code>Draw</code> 
+                se na obrazovce vykreslí černý osmiúhelník.
+            </li>
+            
+        </ol>
+        
+        <h3>Úkoly bez jednotkových testů:</h3>
+        <ol>
+            <li>
+                Smažte třídu <code>DrawExtra03</code>, pokud ji v projektu stále máte.
+            </li>
+            <li>
+                V balíku <code>geometry</code> vytvořte třídu <code>Square</code> rozšiřující třídu <code>GeneralRegularPolygon</code>.
+                Čtverec se bude dát vytvořit následujícími způsoby (třída bude mít následující konstruktory):
+                <ul>
+                    <li>
+                        Zadáním souřadnic středu a délky hran.
+                    </li>
+                    <li>
+                        Zadáním poloměru opsané kružnice a souřadnic středu.
+                    </li>
+                </ul>
+                Pozn.: Aby šlo konstruktory ve třídě <code>Square</code> přetížit, musí mít druhý konstruktor
+                parametry v opačném pořadí, tj. jako první poloměr a jako druhý střed. Jinak by totiž byla 
+                signatura obou konstruktorů stejná.
+            </li>
+            <li>
+                V balíku <code>geometry</code> vytvořte třídu <code>OlympicRings</code> představující olympijské kruhy (viz obrázek - v našem případě 
+                budou kruhy tenčí, rozložení a barvy ale musí odpovídat).
+                Konstruktor bude mít dva parametry: střed černého kruhu a poloměr kruhů.
+                Třída bude mít pět get metod s názvem <code>getBlackRing()</code> atd., které vždy vrátí 
+                kruh příslušné barvy. 
+                <br/><img src="04d.gif" alt="" width="200"/><br/>
+            </li>
+            <li>
+                Odkomentujte kód ve třídě <code>DrawExtra04</code>. Spuštěním této třídy zajistíte vykreslení 
+                olympijských kruhů uprostřed čtverce (postaveného na špici).
+            </li>
+        </ol>
+        
+    </body>
+</html>

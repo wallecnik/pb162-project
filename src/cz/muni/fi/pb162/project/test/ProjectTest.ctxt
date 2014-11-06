@@ -1,9 +1,0 @@
-#BlueJ class context
-comment0.params=
-comment0.target=void\ task01()
-comment1.params=
-comment1.target=void\ task02()
-comment1.text=\n\ \ \ \ @Test\ public\ void\ task02()\ {\n\ \ \ \ \ \ \ \ task\ \=\ 2;\n\ \ \ \ \ \ \ \ \n\ \ \ \ \ \ \ \ BasicRulesTester.testMethodsAndAttributes(SquareObsolete.class);\n\ \ \ \ \ \ \ \ \n\ \ \ \ \ \ \ \ SquareObsolete\ s\ \=\ new\ SquareObsolete();\n\ \ \ \ \ \ \ \ \n\ \ \ \ \ \ \ \ assertTrue("Rozsireni\ nadtridy",\ s\ instanceof\ GeneralRegularPolygon);\n\ \ \ \ \ \ \ \ assertEquals("Nadbytecne\ atributy",\ 0,\ SquareObsolete.class.getDeclaredFields().length);\n\ \ \ \ \ \ \ \ try\ {\n\ \ \ \ \ \ \ \ \ \ \ \ SquareObsolete.class.getDeclaredMethod("toString");\n\ \ \ \ \ \ \ \ }\ catch(NoSuchMethodException\ ex)\ {\n\ \ \ \ \ \ \ \ \ \ \ \ fail("Chybi\ toString()");\n\ \ \ \ \ \ \ \ }\n\ \ \ \ \ \ \ \ assertEquals("Nadbytecne\ metody",\ 1,\ SquareObsolete.class.getDeclaredMethods().length);\n\ \ \ \ \ \ \ \ assertEquals("toString()",\ "Square\:\ 1.0x1.0,\ color\=white",\ \ s.toString());\n\ \ \ \ \ \ \ \ \n\ \ \ \ \ \ \ \ pointsPerTest\ +\=\ 1.0;\n\ \ \ \ }\n
-comment2.params=
-comment2.target=void\ task03()
-numComments=3

@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=array
+comment0.target=ArrayPolygon(Vertex2D[])
+comment0.text=\n\ Constructor\ of\ object\ of\ type\ ArrayPolygon\n\n\ @param\ \ array\ \ \ \ \ \ \ \ \ \ \ \ \ array\ of\ vertices\ of\ this\ polygon\n\ @throws\ NullPointerException\ if\ any\ vertex\ in\ the\ array\ is\ null\n
+comment1.params=index
+comment1.target=Vertex2D\ getVertex(int)
+comment1.text=\n\ Returns\ vertex\ at\ given\ index\ modulo\ number\ of\ indices.\n\n\ @param\ index\ vertex\ index\n\ @return\ vertex\ at\ given\ index\ modulo\ number\ of\ indices\n\ @throws\ IllegalArgumentException\ if\ index\ is\ negative\n
+comment2.params=
+comment2.target=int\ getNumVertices()
+comment2.text=\n\ Returns\ number\ of\ vertices\ of\ the\ polygon.\n\n\ @return\ number\ of\ vertices\n
+numComments=3

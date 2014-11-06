@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=
+comment0.target=double\ getHeight()
+comment0.text=\n\ Returns\ the\ height\ of\ the\ object,\n\ i.e.\ the\ height\ of\ the\ smallest\ bounding\ rectangle.\n\n\ @return\ object's\ height\n
+comment1.params=
+comment1.target=double\ getWidth()
+comment1.text=\n\ Returns\ the\ width\ of\ the\ object,\n\ i.e.\ the\ width\ of\ the\ smallest\ bounding\ rectangle.\n\n\ @return\ object's\ width\n
+comment2.params=
+comment2.target=double\ getLength()
+comment2.text=\n\ Returns\ either\ the\ length\ of\ open\ 2D\ geometry\ (e.g.\ the\ length\ of\ a\ polyline)\n\ or\ the\ perimeter\ of\ enclosed\ 2D\ object\ (e.g.\ the\ perimeter\ of\ a\ polygon).\n\n\ @return\ length\ or\ perimeter\n
+comment3.params=
+comment3.target=double\ getArea()
+comment3.text=\n\ Return\ area\ of\ a\ solid\ object.\n\n\ @return\ Area\n
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment4.text=\n\ Nicely\ formatted\ string\ of\ all\ vertices\ of\ this\ object\n\n\ @return\ String\ with\ all\ vertices\n
+numComments=5

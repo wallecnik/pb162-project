@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        
+        V předchozích iteracích jsme pracovali s pravidelnými n-úhelníky. Nyní
+        si systém rozšíříme o obecnější tzv. jednoduché n-úhelníky. To jsou 
+        obecné nepravidelné uzavřené n-úhelníky bez vzájemně se protínajících hran, 
+        jak ukazují následující příklady:
+        <br/><img src="05b.png" height="150"/><br/>
+        Přestože pravidelný n-úhelník je speciální případ jednoduchého n-úhelníka,
+        v našem případě budou hierarchie tříd "pravidelné n-úhelníky" a "jednoduché n-úhelníky"
+        oddělené. Je to z toho důvodu, že pravidelné n-úhelníky máme definovány pomocí 
+        poloměru opsané kružnice a počtu hran, zatímco jednoduché n-úhelníky musí být
+        z principu definovány pomocí seznamu souřadnic jednotlivých vrcholů.
+        
+        <h3>Úkoly s jednotkovými testy:</h3>
+        <ol>
+            <li>
+                V balíku <code>geometry</code> vytvořte abstraktní třídu <code>SimplePolygon</code> 
+                implementující rozhraní <code>Polygon</code>. 
+                Rozhraní <code>Polygon</code> definuje metody obecného n-úhelníka.
+                Třída <code>SimplePolygon</code> bude obecná v tom smyslu, že nebude předjímat
+                způsob uložení jednotlivých vrcholů (polem, kolekcí apod.). To nechá až na podtřídy. Bude
+                tedy implementovat pouze následující metody, ostatní zůstanou neimplementované:
+                <ul>
+                    <li><code>getHeight</code> vrátí rozdíl mezi největší a nejmenší souřadnicí 
+                        Y v n-úhelníku. Podobně <code>getWidth</code> pro X-ové souřadnice.</li>
+                    <li><code>getLength</code> bude implementována jako součet délek jednotlivých 
+                        hran <b>včetně hrany mezi posledním a prvním vrcholem</b>.</li>
+                    <li><code>getArea</code> bude obsahovat obecný algoritmus pro výpočet plochy jednoduchého 
+                        uzavřeného n-úhelníka:
+                        <br/><img src="05a.png" alt="A = 0.5 * sum(i:0..n-1){Xi * Yi+1 - Xi+1 * Yi}"/><br/>
+                        kde <code>n</code> je počet vrcholů, 
+                        <code>x<sub>i</sub></code> a <code>y<sub>i</sub></code> jsou souřadnice aktuálního 
+                        i-tého vrcholu a
+                        <code>x<sub>i+1</sub></code>, <code>y<sub>i+1</sub></code> jsou souřadnice následujího vrcholu.
+                        Vzoreček předpokládá, že vrchol s indexem <code>n</code> je roven vrcholu s indexem <code>0</code>.</li>
+                    <li><code>toString</code> vrátí řetězec ve tvaru <i>"Polygon: vertices = [x, y] [x, y]"</i>,
+                         kde [x, y] jsou postupně všechny souřadnice vrcholů.</li>
+                 </ul>
+            </li>
+            
+            <li>
+                Vytvořte třídu <code>ArrayPolygon</code> rozšižující třídu <code>SimplePolygon</code>.
+                <ul>
+                    <li>Souřadnice vrcholů n-úhelníka budou uloženy ve formě pole.</li>
+                    <li>Konstruktor bude brát pole vrcholů jako svůj vstupní argument.
+                        Konstruktor zjistí, jestli samotné pole, nebo některý jeho prvek není null. 
+                        Pokud je null, vyhodí vhodnou výjimku.</li>
+                    <li>Konstruktor si vstupní pole zkopíruje (nestačí tedy pouze uložit ukazatel 
+                        na pole do atributu).</li>
+                    <li>Metoda <code>getVertex</code> vrátí i-tý vrchol modulo počet vrcholů.
+                        V případě záporného vstupního argumentu vyhodí požadovanou výjimku.</li>
+                    <li><b>Pozn. pro cvičící:</b> metoda <code>getVertex(index)</code> má vracet 
+                        vrchol na daném indexu modulo počet vrcholů. Vysvětlit, ukázat co to obnáší
+                        a obecně vysvětlit operátor <code>%</code>.</li>
+                </ul>
+            </li>
+            
+            <li>
+                Upravte třídu <code>Triangle</code> tak, aby rozšiřovala třídu <code>ArrayPolygon</code>:
+                <ul>
+                    <li>Konstruktor zůstane v původní podobě, tj. bude brát tři konkrétní 
+                        vrcholy jako svoje vstupní argumenty a předá je konstruktoru nadtřídy 
+                        v podobě pole vrcholů.</li>
+                    <li>Zrušte původní metody <code>getVertexA</code> apod. 
+                        Již nejsou potřeba. Vrchol A je nyní na indexu 0, vrchol B na indexu 1 a vrchol C na indexu 2. </li>
+                    <li>Zrušte všechny metody, které lze zdědit beze změny, včetně metody <code>toString</code>.</li>
+                    <li>Upravte metodu <code>isEquilateral</code> tak, aby opět fungovala.</li>
+                </ul>
+            </li>
+            
+            <li>
+                Pokud jste implementaci provedli bez chyb, tak po spuštění třídy <code>Draw</code> 
+                se na obrazovce vykreslí fialový trojúhelník a uvnitř něj fialový polygon 
+                (v jeho tvaru nehledejte žádný smysl :-).
+            </li>
+        </ol>
+            
+        <h3>Úkoly bez jednotkových testů:</h3>
+        <ol>
+            <li>
+                Smažte třídu <code>DrawExtra04</code>, pokud ji v projektu stále máte.
+            </li>
+            <li>
+                Do třídy <code>ArrayPolygon</code> přidejte metodu <code>ArrayPolygon invert()</code>, která
+                vytvoří a vrátí n-úhelník s obráceným pořadím vrcholů.
+            </li>
+            <li>
+                Do třídy <code>ArrayPolygon</code> přidejte metodu <code>boolean compare(ArrayPolygon pol)</code>, která
+                vrátí <code>true</code> pokud jsou oba n-úhelníky stejné, tj. mají stejné součadnice vrcholů se stejnou
+                sousedností (propojením hranami). 
+                N-úhelníky tedy mohou mít i posunuté souřadnice a/nebo obrácené pořadí vrcholů.
+                <br/>
+                <b>Př.:</b> Následující trojúhelníky jsou stejné: 
+                <ul>
+                    <li>([-1,-1] [ 1,-1] [ 0, 1]) </li>
+                    <li>([ 1,-1] [ 0, 1] [-1,-1]) /posunutí vrcholů oproti prvnímu/</li>
+                    <li>([ 0, 1] [ 1,-1] [-1,-1]) /opačné pořadí vrcholů oproti prvnímu/</li>
+                    <li>([ 1,-1] [-1,-1] [ 0, 1]) /kombinace obojího/</li>
+                </ul>
+            </li>
+            <li>
+                Třída <code>DrawExtra05</code> tentokrát nic nevykresluje, umožní vám ale ověřit, jestli je 
+                vaše metoda <code>compare()</code> správně naimplementována. 
+            </li>
+        </ol>
+
+    </body>
+</html>

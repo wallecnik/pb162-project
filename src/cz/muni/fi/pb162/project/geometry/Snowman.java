@@ -41,7 +41,7 @@ public class Snowman {
     private void setBottomBall (double radius) {
 
         Vertex2D center;
-        center = new Vertex2D( 0, 0 );
+        center = new Vertex2D(0,0);
 
         bottomBall = new Circle(center, radius);
 
@@ -50,7 +50,7 @@ public class Snowman {
     private void setMiddleBall (double radius, double factor) {
 
         Vertex2D center;
-        center = new Vertex2D( 0, radius + (radius*factor) );
+        center = new Vertex2D(0, radius + (radius*factor));
 
         middleBall = new Circle(center, radius*factor);
 
@@ -59,7 +59,7 @@ public class Snowman {
     private void setTopBall (double radius, double factor) {
 
         Vertex2D center;
-        center = new Vertex2D( 0, radius + (radius*factor) + (radius*factor) + (radius*factor*factor) );
+        center = new Vertex2D(0, radius + (radius*factor) + (radius*factor) + (radius*factor*factor));
 
         topBall = new Circle(center, radius*factor*factor);
 
@@ -68,7 +68,7 @@ public class Snowman {
     private void setRightHandBall (double radius, double factor) {
 
         Vertex2D center;
-        center = new Vertex2D( (radius*factor) + ( (radius*factor) / 2 ), radius + (radius*factor) );
+        center = new Vertex2D((radius*factor) + ((radius*factor) / 2), radius + (radius*factor));
 
         rightHandBall = new Circle(center, (radius*factor) / 2);
 
@@ -77,7 +77,7 @@ public class Snowman {
     private void setLeftHandBall (double radius, double factor) {
 
         Vertex2D center;
-        center = new Vertex2D( - ( (radius*factor) + ( (radius*factor) / 2 ) ), radius + (radius*factor) );
+        center = new Vertex2D(-((radius*factor) + ((radius*factor) / 2)), radius + (radius*factor));
 
         leftHandBall = new Circle(center, (radius*factor) / 2);
 

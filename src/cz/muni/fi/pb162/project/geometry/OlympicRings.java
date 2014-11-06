@@ -18,81 +18,56 @@ public class OlympicRings {
     private Circle greenRing;
 
     /**
-     * Constructor of objects of class Olympicrings
+     * Constructor of objects of class OlympicRings
      *
      * @param center
      * @param radius
      */
     public OlympicRings (Vertex2D center, double radius) {
 
-        this.blackRing = new Circle(center, radius);
-        setBlueRing();
-        setGreenRing();
-        setRedRing();
-        setYellowRing();
+        double centerX = center.getX();
+        double centerY = center.getX();
 
-    }
-
-    public Circle getBlackRing() { return this.blackRing; }
-
-    public Circle getBlueRing() { return this.blueRing; }
-
-    public Circle getGreenRing() { return this.greenRing; }
-
-    public Circle getYellowRing() { return this.yellowRing; }
-
-    public Circle getRedRing() { return this.redRing; }
-
-    private void setBlueRing() {
-
-        blueRing =  new Circle(
-                new Vertex2D(
-                        blackRing.getCenter().getX() - blackRing.getRadius() * 2 * 1.2,
-                        blackRing.getCenter().getY()
-                ),
-                blackRing.getRadius()
-        );
-        blueRing.setColor("blue");
-
-    }
-
-    private void setRedRing() {
-
+        blackRing = new Circle(center, radius);
+        blueRing = new Circle(
+                new Vertex2D(centerX - radius * 2 * 1.2, centerY),
+                radius);
         redRing = new Circle(
-                new Vertex2D(
-                        blackRing.getCenter().getX() + blackRing.getRadius() * 2 * 1.2,
-                        blackRing.getCenter().getY()
-                ),
-                blackRing.getRadius()
-        );
-        redRing.setColor("red");
-
-    }
-
-    private void setYellowRing() {
-
+                new Vertex2D(centerX + radius * 2 * 1.2, centerY),
+                radius);
         yellowRing = new Circle(
-                new Vertex2D(
-                        blackRing.getCenter().getX() - blackRing.getRadius() * 2 * 0.6,
-                        blackRing.getCenter().getY() - blackRing.getRadius() * 2 * 0.6
-                ),
-                blackRing.getRadius()
-        );
-        yellowRing.setColor("yellow");
-
-    }
-
-    private void setGreenRing() {
-
+                new Vertex2D(centerX - radius * 2 * 0.6, centerY - radius * 2 * 0.6),
+                radius);
         greenRing = new Circle(
-                new Vertex2D(
-                        blackRing.getCenter().getX() + blackRing.getRadius() * 2 * 0.6,
-                        blackRing.getCenter().getY() - blackRing.getRadius() * 2 * 0.6
-                ),
-                blackRing.getRadius()
-        );
+                new Vertex2D(centerX + radius * 2 * 0.6, centerY - radius * 2 * 0.6),
+                radius);
+
+        blackRing.setColor("black");
+        blueRing.setColor("blue");
+        redRing.setColor("red");
+        yellowRing.setColor("yellow");
         greenRing.setColor("green");
 
+    }
+
+    public Circle getBlackRing() {
+        return this.blackRing;
+    }
+
+    public Circle getBlueRing() {
+        return this.blueRing;
+    }
+
+    public Circle getGreenRing() {
+        return this.greenRing;
+    }
+
+    public Circle getYellowRing() {
+        return this.yellowRing;
+    }
+
+    public Circle getRedRing() {
+        return this.redRing;
     }
 
 }

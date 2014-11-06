@@ -43,7 +43,7 @@ public class Circle extends GeneralRegularPolygon implements RegularPolygon, Col
      */
     private Circle(Vertex2D center) {
 
-        super(center, Integer.MAX_VALUE, 0);
+        super(center, Integer.MAX_VALUE, 0.0);
 
     }
     
