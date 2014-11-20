@@ -12,12 +12,12 @@ public interface Colored {
      * 
      * @return Color name.
      */
-    String getColor();
+    Color getColor();
     
     /**
      * Sets new color.
      * 
      * @param color Color name
      */
-    void setColor(String color);
+    void setColor(Color color);
 }

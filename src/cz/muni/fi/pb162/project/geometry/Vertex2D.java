@@ -67,11 +67,27 @@ public class Vertex2D {
         return this.y;
     }
 
-    public boolean equals(Vertex2D vert) {
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
 
-        if (this.x == vert.x && this.y == vert.y) return true;
-        return false;
+        Vertex2D vertex2D = (Vertex2D) o;
 
+        if (Double.compare(vertex2D.x, x) != 0) return false;
+        if (Double.compare(vertex2D.y, y) != 0) return false;
+
+        return true;
     }
 
+    @Override
+    public int hashCode() {
+        int result;
+        long temp;
+        temp = Double.doubleToLongBits(x);
+        result = (int) (temp ^ (temp >>> 32));
+        temp = Double.doubleToLongBits(y);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        return result;
+    }
 }

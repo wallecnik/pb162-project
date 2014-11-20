@@ -1,23 +1,23 @@
 package cz.muni.fi.pb162.project.demo;
 
-import cz.muni.fi.pb162.project.demo.*;
-import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Polygon;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import cz.muni.fi.pb162.project.geometry.Vertex2D;
 import cz.muni.fi.pb162.project.geometry.Solid;
 import cz.muni.fi.pb162.project.geometry.Circle;
-import cz.muni.fi.pb162.project.geometry.Colored;
-import cz.muni.fi.pb162.project.geometry.RegularPolygon;
-import cz.muni.fi.pb162.project.geometry.ArrayPolygon;
 import cz.muni.fi.pb162.project.geometry.SimplePolygon;
 import cz.muni.fi.pb162.project.geometry.Triangle;
+import cz.muni.fi.pb162.project.geometry.RegularPolygon;
+import cz.muni.fi.pb162.project.geometry.CollectionPolygon;
+import cz.muni.fi.pb162.project.geometry.Color;
+import cz.muni.fi.pb162.project.geometry.Colored;
+import cz.muni.fi.pb162.project.geometry.Vertex2D;
 
 /**
+ * !!! ODKOMENTOVAT RADKY V MAIN() !!!
  * 
  * Trida umoznujici vykresleni doposud dokoncenych grafickych objektu (bod, kruznice, trojuhelnik).
  * 
@@ -41,23 +41,23 @@ public class Draw extends JFrame {
     private List<RegularPolygon> ngons   = new ArrayList<RegularPolygon>();
     private List<SimplePolygon> polygons = new ArrayList<SimplePolygon>();
     
-    private Color vertexColor;
-    private Color triangleColor;
-    private Color circleColor;
-    private Color ngonColor;
-    private Color polygonColor;
+    private java.awt.Color vertexColor;
+    private java.awt.Color triangleColor;
+    private java.awt.Color circleColor;
+    private java.awt.Color ngonColor;
+    private java.awt.Color polygonColor;
     
     /**
      * Defaultni konstruktor nastavi defaultni barvy pro telesa. Pozadi bile, body cervene, kruznice modre, trojuhelniky zelene
      */
     public Draw() {
         initialize();
-        panel.setBackground(Color.WHITE);
-        this.vertexColor = Color.RED;
-        this.triangleColor = Color.BLUE;
-        this.circleColor = Color.ORANGE;
-        this.ngonColor = Color.BLACK;
-        this.polygonColor = Color.MAGENTA;
+        panel.setBackground(java.awt.Color.WHITE);
+        this.vertexColor = java.awt.Color.RED;
+        this.triangleColor = java.awt.Color.BLUE;
+        this.circleColor = java.awt.Color.ORANGE;
+        this.ngonColor = java.awt.Color.BLACK;
+        this.polygonColor = java.awt.Color.MAGENTA;
     }
     
     private void initialize() {
@@ -136,6 +136,7 @@ public class Draw extends JFrame {
      * @param triangle Trojuhelnik ktery chci vykreslit
      * @return true pokud se trojuhelnik vykresli, false nikoliv
      */
+
     public boolean paintTriangle(Triangle triangle) {
         int width = panel.getWidth();
         int height = panel.getHeight();
@@ -157,6 +158,7 @@ public class Draw extends JFrame {
         triangles.add(triangle);
         return true;
     }
+
     
     /**
      * Metoda pro pridani polygonu do seznamu pro vykresleni.
@@ -312,22 +314,22 @@ public class Draw extends JFrame {
         g.drawPolygon(xVertex, yVertex, polygon.getNumVertices()+1);
     }
     
-    protected void setColor(Graphics g, Solid obj, Color defaultColor) {
+    protected void setColor(Graphics g, Solid obj, java.awt.Color defaultColor) {
         g.setColor(defaultColor);
         
         if (! (obj instanceof Colored)) return;
 
-        String color = ((Colored)obj).getColor();
-        if (color.equalsIgnoreCase("white")) g.setColor(Color.WHITE);
-        if (color.equalsIgnoreCase("black")) g.setColor(Color.BLACK);
-        if (color.equalsIgnoreCase("blue")) g.setColor(Color.BLUE);
-        if (color.equalsIgnoreCase("cyan")) g.setColor(Color.CYAN);
-        if (color.equalsIgnoreCase("gray")) g.setColor(Color.GRAY);
-        if (color.equalsIgnoreCase("green")) g.setColor(Color.GREEN);
-        if (color.equalsIgnoreCase("orange")) g.setColor(Color.ORANGE);
-        if (color.equalsIgnoreCase("red")) g.setColor(Color.RED);
-        if (color.equalsIgnoreCase("yellow")) g.setColor(Color.YELLOW);
-        if (color.equalsIgnoreCase("magenta")) g.setColor(Color.MAGENTA);
+        Color color = ((Colored)obj).getColor();
+        if (color.toString().equalsIgnoreCase("white")) g.setColor(java.awt.Color.WHITE);
+        if (color.toString().equalsIgnoreCase("black")) g.setColor(java.awt.Color.BLACK);
+        if (color.toString().equalsIgnoreCase("blue")) g.setColor(java.awt.Color.BLUE);
+        if (color.toString().equalsIgnoreCase("cyan")) g.setColor(java.awt.Color.CYAN);
+        if (color.toString().equalsIgnoreCase("gray")) g.setColor(java.awt.Color.GRAY);
+        if (color.toString().equalsIgnoreCase("green")) g.setColor(java.awt.Color.GREEN);
+        if (color.toString().equalsIgnoreCase("orange")) g.setColor(java.awt.Color.ORANGE);
+        if (color.toString().equalsIgnoreCase("red")) g.setColor(java.awt.Color.RED);
+        if (color.toString().equalsIgnoreCase("yellow")) g.setColor(java.awt.Color.YELLOW);
+        if (color.toString().equalsIgnoreCase("magenta")) g.setColor(java.awt.Color.MAGENTA);
     }
     
     protected void paintCross(Graphics g) {
@@ -336,7 +338,7 @@ public class Draw extends JFrame {
         int halfX = width/2;
         int halfY = height/2;
         
-        g.setColor(Color.LIGHT_GRAY);
+        g.setColor(java.awt.Color.LIGHT_GRAY);
         g.drawLine(0, halfY, width, halfY);
         g.drawLine(halfX, 0, halfX, height);
     }
@@ -368,11 +370,9 @@ public class Draw extends JFrame {
             new Vertex2D(  10, -20),
             new Vertex2D(  60, -40)
         };
-        SimplePolygon tri = new Triangle(new Vertex2D(-200, -200), new Vertex2D(0, 200), new Vertex2D(200, -200));
-        SimplePolygon pol = new ArrayPolygon(vert1);
+        SimplePolygon pol = new CollectionPolygon(vert1);
         Draw canvas = new Draw();
         canvas.paintSimplePolygon(pol);
-        canvas.paintSimplePolygon(tri);
         canvas.startPainting();
     }
 }

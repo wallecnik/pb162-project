@@ -42,11 +42,11 @@ public class OlympicRings {
                 new Vertex2D(centerX + radius * 2 * 0.6, centerY - radius * 2 * 0.6),
                 radius);
 
-        blackRing.setColor("black");
-        blueRing.setColor("blue");
-        redRing.setColor("red");
-        yellowRing.setColor("yellow");
-        greenRing.setColor("green");
+        blackRing.setColor(Color.BLACK);
+        blueRing.setColor(Color.BLUE);
+        redRing.setColor(Color.RED);
+        yellowRing.setColor(Color.YELLOW);
+        greenRing.setColor(Color.GREEN);
 
     }
 

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        
+        <h3>Úkoly s jednotkovými testy:</h3>
+        <ol>
+            <li>
+                Definujte rovnost dvou vrcholů (třída <code>Vertex2D</code>) tak, 
+                že dva vrcholy jsou stejné, pokud mají stejné souřadnice. Nezapomeňte, 
+                že předefinováním rovnosti máte za povinnost předefinovat ještě jednu 
+                vlastnost/metodu.
+            </li>
+            
+            <li>
+                Vytvořte třídu <code>CollectionPolygon</code> rozšiřující třídu 
+                <code>SimplePolygon</code>. Tato třída bude velmi podobná třídě 
+                <code>ArrayPolygon</code> z páté iterace. Lišit se bude pouze tím, že vrcholy n-úhelníka
+                nebudou uloženy v poli, ale ve vhodné kolekci. Při výběru mezi seznamem a
+                množinou myslete na to, že topologie n-úhelníka je dána pořadím vrcholů a že je povoleno
+                mít více vrcholů se stejnými souřadnicemi (u jednoduchého n-úhelníka
+                se sice nesmí křížit hrany, mohou se ale dotýkat).
+                <ul>
+                    <li>
+                        Třída bude mít stejný konstruktor jako <code>ArrayPolygon</code>, 
+                        tj. bude brát <b>pole</b> vrcholů jako svůj vstupní argument a vrcholy ze vtupního pole 
+                        si uloží do kolekce. Konstruktor navíc otestuje to, že samotné pole ani žádný jeho 
+                        prvek není null. Pokud je null, konstruktor selže a vyhodí vhodnou výjimku.
+                    </li>
+                    <li>
+                        Do třídy navíc přidejte metodu
+                        <code>Collection&lt;Vertex2D&gt; getVertices()</code>, která vrátí 
+                        všechny vrcholy n-úhelníka.
+                    </li>
+                    <li>
+                        Do třídy dále přidejte metodu <code>CollectionPolygon invert()</code>, 
+                        která vytvoří a vrátí n-úhelník s obráceným pořadím vrcholů.
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                Upravte rozhraní <code>Colored</code> tak, aby barva nebyla uchovávána ve formě 
+                textového řetězce, ale pomocí výčtového typu <code>Color</code>. Ve výčtovém typu 
+                definujte několik běžných barev. Upravte exitující třídy tak, aby šel projekt po 
+                úpravě rozhraní přeložit.
+            </li>
+            
+            <li>
+                Odkumentuje řádky v <code>Draw.main()</code>. Pokud jste implementaci provedli bez chyb, 
+                tak po spuštění třídy <code>Draw</code> 
+                se na obrazovce vykreslí polygon (v jeho tvaru nehledejte žádný smysl :-).
+            </li>
+        </ol>
+        
+        <h3>Úkoly bez jednotkových testů:</h3>
+        <ol>
+            <li>
+                Smažte třídu <code>DrawExtra06</code>, pokud ji v projektu stále máte.
+            </li>
+            <li>
+                Do třídy <code>CollectionPolygon</code> přidejte metodu <code>removeLeftmostVertices()</code>, která
+                z polygonu odebere nejlevší vrchol nebo vrcholy (může jich být víc, viz např. obdélník).
+                Odebrané vrcholy vrátí v kolekci jako návratovou hodnotu.
+            </li>
+            <li>
+                Odkomentujte kód ve třídě <code>DemoExtra07</code>. Po spuštění by se měl vykreslit čtverec.
+            </li>
+        </ol>
+
+    </body>
+</html>

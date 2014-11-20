@@ -1,8 +1,8 @@
 #BlueJ class context
 comment0.params=
-comment0.target=java.lang.String\ getColor()
+comment0.target=Color\ getColor()
 comment0.text=\n\ Returns\ color\ of\ the\ object.\n\ \n\ @return\ Color\ name.\n
 comment1.params=color
-comment1.target=void\ setColor(java.lang.String)
+comment1.target=void\ setColor(Color)
 comment1.text=\n\ Sets\ new\ color.\n\ \n\ @param\ color\ Color\ name\n
 numComments=2
