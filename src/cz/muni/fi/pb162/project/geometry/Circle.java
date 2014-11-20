@@ -7,7 +7,7 @@ package cz.muni.fi.pb162.project.geometry;
  * @author Wallecnik
  * @version 23.10.2014
  */
-public class Circle extends GeneralRegularPolygon implements RegularPolygon, Colored{
+public class Circle extends GeneralRegularPolygon {
 
     private double radius;
     

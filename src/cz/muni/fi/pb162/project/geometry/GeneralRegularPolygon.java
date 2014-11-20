@@ -4,7 +4,7 @@ package cz.muni.fi.pb162.project.geometry;
  * Class representing any regular polygon in 2D plain
  *
  * @author Wallecnik
- * @version 23.10.2014
+ * @version 13.11.2014
  */
 public class GeneralRegularPolygon implements RegularPolygon, Colored {
 
@@ -123,6 +123,54 @@ public class GeneralRegularPolygon implements RegularPolygon, Colored {
                 getEdgeLength() +
                 ", color=" +
                 getColor();
+
+    }
+
+    /**
+     * Returns vertex at given index modulo number of indices.
+     *
+     * @param index vertex index
+     * @return vertex at given index modulo number of indices
+     * @throws IllegalArgumentException if index is negative
+     */
+    public Vertex2D getVertex(int index) throws IllegalArgumentException {
+
+        if (index < 0) throw new IllegalArgumentException("index of vertex cannot be negative");
+
+        Vertex2D vert = new Vertex2D(
+                center.getX() - getRadius() * Math.cos(index * 2 * Math.PI / getNumVertices()),
+                center.getY() - getRadius() * Math.sin(index * 2 * Math.PI / getNumVertices())
+        );
+
+        return vert;
+
+    }
+
+    /**
+     * Returns number of vertices of the polygon.
+     *
+     * @return number of vertices
+     */
+    public int getNumVertices() {
+        return numEdges;
+    }
+
+    /**
+     * Divides the polygon into triangles by the outer edges and center
+     *
+     * @return array of triangles
+     */
+    public Triangle[] triangulate() {
+
+        Triangle[] triArray = new Triangle[getNumVertices()];
+
+        for (int i = 0; i < getNumVertices(); i++) {
+
+            triArray[i] = new Triangle(getVertex(i), getVertex(i+1), getCenter());
+
+        }
+
+        return triArray;
 
     }
 

@@ -12,4 +12,6 @@ comment3.params=
 comment3.target=double\ getX()
 comment4.params=
 comment4.target=double\ getY()
-numComments=5
+comment5.params=vert
+comment5.target=boolean\ equals(Vertex2D)
+numComments=6

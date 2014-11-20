@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        
+        Cvičení zaměřené na práci s výjimkami.
+        Úloha simuluje ukládání dat (např. našich grafických primitiv) 
+        na vzdálený databázový server.
+        
+        <h3>Úkoly s jednotkovými testy:</h3>
+        
+        <ol>
+            <li>
+                V balíku <code>cz.muni.fi.pb162.project.db</code>
+                (pozor, je to jiný balík, než jsme doposud používali) 
+                vytvořte <b>hlídané</b> výjimky <code>DbException</code>, 
+                <code>DbUnreachableException</code> a <code>CannotStoreException</code>.
+                <ul>
+                    <li>
+                        <code>DbException</code> je nejvyšší třída v hierarchii,
+                        ostatní dvě výjimky ji budou rozšiřovat. Obecně tato výjimka
+                        reprezentuje chybu při ukládání dat na vzdálený server.
+                    </li>
+                    <li>
+                        <code>DbUnreachableException</code> reprezentuje chybu při 
+                        navazování spojení se vzdáleným databázovým serverem.
+                    </li>
+                    <li>
+                        <code>CannotStoreException</code> reprezentuje chybu, kdy
+                        se sice povedlo navázat spojení, ale nepodařilo se 
+                        data uložit ani na několikátý pokus.
+                    </li>
+                    <li>
+                        Všechny výjimky budou mít alespoň jeden konstruktor, 
+                        který umožní nastavit řetězec s chybovou hláškou a zároveň 
+                        příčinu (cause) výjimky (tj. výjimku, která byla bezprostřední 
+                        příčinou této výjimky).
+                    </li>
+                </ul>
+            </li>
+            
+            <li>
+                V témže balíku vytvořte třídu <code>MyStorage</code> implementující rozhraní 
+                <code>Storage</code>. Třída <code>MyStorage</code> bude sloužit
+                k (fiktivnímu) ukládání grafických primitiv na vzdálený databázový 
+                server.
+                <ul>
+                    <li>
+                        Třída bude mít jeden konstruktor se dvěma parametry: 
+                        <code>connector</code> typu <code>Connector</code> a 
+                        celočíselný <code>maxAttempts</code>.
+                        Konstruktor bude kontrolovat platnost vstupním argumentů
+                        (<code>connector</code> nesmí být <code>null</code> a 
+                        <code>maxAttempts</code> nesmí být menší než jedna). 
+                        Při zjištění chybného argumentu vyhodí vhodnou 
+                        nehlídanou výjimku.
+                    </li>
+                    <li>
+                        Data se budou ukládat tak, že se nejdříve pomocí instance 
+                        třídy <code>Connector</code> naváže spojení se vzdáleným serverem 
+                        a pak se pomocí takto získaného spojení zašlou data.
+                    </li>
+                    <li>
+                        Pokud nedojde k navázání spojení (<code>Connector</code> vyhodí
+                        jednu z výjimek), tak ukládání dat okamžitě končí a vyhodí se
+                        výjimka <code>DbUnreachableException</code>.
+                    </li>
+                    <li>
+                        Pokud selže samotné zaslání dat po úspěšném navázání spojení
+                        (tj. <code>Connection</code> vyhodí výjimku), tak se metoda 
+                        pokusí o opětovné zaslání. Počet takových pokusů je 
+                        <code>maxAttempts</code>. Pokud se napodaří data
+                        uložit ani po tomto počtu pokusů, vyhodí se 
+                        výjimka <code>CannotStoreException</code>.
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        
+        <h3>Úkoly bez jednotkových testů:</h3>
+        <ol>
+            <li>
+                Smažte třídu <code>DrawExtra05</code>, pokud ji v projektu stále máte.
+            </li>
+            <li>
+                Upravte rozhraní  <code>RegularPolygon</code> tak, aby
+                rozšiřovalo rozhraní <code>Polygon</code>.
+            </li>
+            <li>
+                Doplňte chybějící metody do třídy <code>GeneralRegularPolygon</code>.
+                Souřadnice i-tého vrcholu se vypočítá podle následujícího vzorečku:<br/>
+                <code>x = C<sub>x</sub> - r * cos(i * 2 * PI / n)</code><br/>
+                <code>y = C<sub>y</sub> - r * sin(i * 2 * PI / n)</code><br/>
+                kde <code>C</code> je střed, <code>r</code> je poloměr, <code>n</code> je počet vrcholů
+                a <code>i</code> je index vrcholu.
+            </li>
+            <li>
+                Do třídy <code>GeneralRegularPolygon</code> přidejte metodu
+                <code>triangulate()</code>, která vrátí pole trojúhelníků rozdělujících
+                pravidelný n-úhelník. Strany trojúhelníků budou vždy tvořeny jednou 
+                původní hranou a spojnicemi příslušných vrcholů se středem n-úhelníka.
+            </li>
+            <li>
+                Odkomentujte kód ve třídě <code>DrawExtra06</code>. Spuštěním této třídy zajistíte vykreslení 
+                osmiúhelníka rozděleného na trolúhelníkové výseče.
+            </li>
+        </ol>
+
+    </body>
+</html>

@@ -100,13 +100,13 @@ public abstract class SimplePolygon implements Polygon{
     @Override
     public String toString() {
 
-        String retString = "Polygon: vertices =";
+        StringBuilder retString = new StringBuilder("Polygon: vertices =");
 
         for (int i = 0; i < getNumVertices(); i++) {
-            retString += " " + getVertex(i).toString();
+            retString.append(" " + getVertex(i).toString());
         }
 
-        return retString;
+        return retString.toString();
 
     }
 }

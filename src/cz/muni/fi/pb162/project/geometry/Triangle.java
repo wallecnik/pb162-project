@@ -7,7 +7,7 @@ package cz.muni.fi.pb162.project.geometry;
  * @author Wallecnik
  * @version 16.10.2014
  */
-public class Triangle extends ArrayPolygon implements Solid {
+public class Triangle extends ArrayPolygon {
 
     /**
      * Three smaller triangles inside this big one

@@ -67,4 +67,11 @@ public class Vertex2D {
         return this.y;
     }
 
+    public boolean equals(Vertex2D vert) {
+
+        if (this.x == vert.x && this.y == vert.y) return true;
+        return false;
+
+    }
+
 }

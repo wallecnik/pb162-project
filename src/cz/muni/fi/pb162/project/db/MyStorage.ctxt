@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=connector\ maxAttempts
+comment0.target=MyStorage(Connector,\ int)
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ MyStorage\n\n\ @param\ connector\ \ \ connector\ to\ be\ used\ when\ establishing\ a\ connection\n\ @param\ maxAttempts\ maximum\ amount\ of\ attempts\ to\ try\ when\ storing\ data\n
+comment1.params=host\ data
+comment1.target=void\ store(java.lang.String,\ java.lang.Object)
+comment1.text=\n\ Stores\ data\ in\ remote\ Db\ server.\n\n\ @param\ host\ Address\ of\ remote\ DB\ server\n\ @param\ data\ Data\ to\ store\n\ @throws\ DbUnreachableException\ if\ DB\ is\ unreachable\n\ @throws\ CannotStoreException\ if\ the\ method\ failed\ during\ the\ storing\ data\ into\ DB\n
+numComments=2

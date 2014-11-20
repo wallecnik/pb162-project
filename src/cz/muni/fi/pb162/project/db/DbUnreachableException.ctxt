@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.params=message\ cause
+comment0.target=DbUnreachableException(java.lang.String,\ java.lang.Throwable)
+comment0.text=\n\ Constructor\ of\ this\ exception\n\n\ @param\ message\ message\ to\ be\ said\ in\ exception\n\ @param\ cause\ \ \ cause\ that\ caused\ the\ exception\n
+numComments=1
