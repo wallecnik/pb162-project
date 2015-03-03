@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        
+        <p>
+            V předchozích iteracích jsme vytvořili několik variant jednoduchých n-úhelníků,  
+            jejichž topologie (pořadí propojení vrcholů hranami) bylo dáno pořadím vrcholů.
+            Nyní si vytvoříme n-úhelník s pojmenovanými vrcholy. Topologie bude dána 
+            abecedním pořadím názvů vrcholů. Změnou pojmenování vrcholů tak můžeme snadno změnit 
+            topologii n-úhelníka.
+        </p>
+        
+        <p>
+            Uveďme si příklad. Na následujícím obrázku je vlevo n-úhelník se šesti vrcholy.
+            Čísla u vrcholů představují pořadí, ve kterém byly vrcholy definovány a topologie
+            je dána jejich pořadím. Pokud je topologie dána pojmenováním vrcholů, pak 
+            stejného výsledku dosáhneme pojmenováním vrcholů 1-6 písmeny A-F (obrázek uprostřed).
+            Přejmenování vrcholů ale můžeme zcela změnit topologii bez nutnosti měnit 
+            pořadí samotných vrcholů n-úhelníka (obrázek vpravo).
+            <br/>
+            <img src="topology.png" alt="topologie"/>
+        </p>
+        
+        <h3>Úkoly s jednotkovými testy:</h3>
+        <ol>
+            <li>
+                <i>Pomocí uspořádané mapy</i> vytvořte třídu <code>LabeledPolygon</code> 
+                rozšiřující třídu <code>SimplePolygon</code>. 
+                Tato třída bude podobná třídám <code>ArrayPolygon</code> a <code>CollectionPolygon</code> 
+                s tím rozdílem, že vrcholy jsou uloženy pod svými názvy. 
+                Vrcholy jsou pojmenovány libovolným textovým řetězcem (nejčastěji jedním písmenem) a
+                platí, že jméno vrcholu je v rámci n-úhelníka unikátní. Naopak ale n-úhelník může obsahovat
+                dva různě pojmenované vrcholy se stejnými souřadnicemi (viz situace na výše uvedeném 
+                příkladu). Pořadí vrcholů v n-úhelníku je dáno jejich pojmenováním (lexikograficky vzestupně). 
+                Třída nebude mít konstruktor, polygon se vytvoří pomocí metody <code>addVertex</code>.
+                <br/>Vytvořte následující metody:
+                <ul>
+                    <li><code>void addVertex(String label, Vertex2D vert)</code> uloží vrchol pod daným názvem.
+                        Název ani vrchol nesmí být <code>null</code>, jinak metoda selže s vhodnou výjimkou.
+                        Pokud již pod daným názvem vrchol v n-úhelníku existuje, vymění se za nový.</li>
+                    <li><code>Vertex2D getVertex(String label)</code> vrátí souřadnice vrcholu se jménem 
+                        <code>label</code>. Metoda vyhodí výjimku <code>IllegalArgumentException</code> 
+                        pokud takový vrchol neexistuje.</li>
+                    <li><code>Vertex2D getVertex(int index)</code> vrátí index-tý vrchol vzhledem k pořadí 
+                        danému pojmenováním vrcholů. 
+                        Další požadavky na metodu viz JavaDoc rozhraní <code>Polygon</code>.
+                        Pokud např. máme vrcholy "A", "B" a "C", tak nultý vrchol je 
+                        "A", první vrchol "B", druhý vrchol "C", třetí vrchol opět "A" (modulo) apod.</li>
+                    <li><code>getLabels()</code> vrátí kolekci názvů vrcholů uspořádaných lexikograficky vzestupně.</li>
+                </ul>
+            </li>
+
+            <li>
+                Definujte přirozené uspořádání na třídě <code>Vertex2D</code> v souladu s 
+                metodou <code>equals()</code>, tj. třídí se podle souřadnice X vzestupně 
+                a v případě shody se třídí podle Y vzestupně.
+            </li>
+            
+            <li>
+                Vytvořte komparátor <code>VertexInverseComparator</code> pro třídu 
+                <code>Vertex2D</code>, který bude vrcholy třídit sestupně, tj. nejprve se třídí 
+                podle souřadnice X sestupně a v případě shody se třídí podle Y sestupně. 
+            </li>
+            
+            <li>
+                Do třídy <code>LabeledPolygon</code> přidejte následující metody:
+                <ul>
+                    <li><code>Collection&lt;Vertex2D&gt; getSortedVertices()</code>, 
+                        která vrátí vrcholy setříděné podle přirozeného uspořádání bez duplicit.</li>
+                    <li><code>Collection&lt;Vertex2D&gt; getSortedVertices(comparator)</code>, 
+                        která vezme libovolný komparátor 2D vrcholů a vrátí vrcholy setříděné podle 
+                        daného komparátoru bez duplicit.</li>
+                </ul>
+            </li>
+            
+            <li>
+                Pokud jste implementaci provedli bez chyb, tak po spuštění třídy <code>Draw</code> 
+                se na obrazovce vykreslí polygon s pojmenovanými vrcholy podobný prostřednímu polygonu nahoře.
+            </li>
+        </ol>
+        
+        <h3>Úkoly bez jednotkových testů:</h3>
+        <ol>
+            <li>
+                Do třídy <code>LabeledPolygon</code> přidejte metodu
+                <code>Collection&lt;String&gt; getLabels(Vertex2D vert)</code>, která vrátí všechna jména vrcholů 
+                se souřadnicemi <code>vert</code>. Pokud žádný takový vrchol neexistuje, vrátí prázdnou kolekci.
+            </li>
+            <!--
+            <li>
+                Do třídy <code>LabeledPolygon</code> přidejte metodu <code>LabeledPolygon invert()</code>, která
+                vytvoří a vrátí n-úhelník s obráceným pořadím vrcholů.
+            </li>
+            -->
+            <li>
+                Do třídy <code>LabeledPolygon</code> přidejte metodu <code>duplicateVertices</code>, která
+                vrátí množinu vrcholů, které jsou v polygonu duplicitní (vícekrát pod různým názvem).
+            </li>
+            <li>
+                Odkomentujte kód ve třídě DemoExtra08. Spuštěním této třídy se sice nic nevykreslí, vypíše se ale:
+                <pre>
+Labels of vertex (0,0): [E, B]
+Duplicate vertices: [[0.0, 0.0]]
+                </pre>
+            </li>
+        </ol>
+
+    </body>
+</html>

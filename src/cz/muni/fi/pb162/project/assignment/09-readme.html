@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+         
+        Cílem dnešní iterace je ve třech krocích upravit třídu <code>LabeledPolygon</code> tak, 
+        aby implementovala rozhraní <code>PolygonIO</code>.
+        
+        <h3>Úkoly s jednotkovými testy:</h3>
+        <ol>
+            <li>
+                Metoda <code>read(InputStream)</code> vezme otevřený vstup obsahující pojmenované vrcholy,
+                vrcholy načte a přidá je k existujícím vrcholům polygonu.
+                Při jakékoliv chybě vstupu/výstupu nebo chybě formátu vstupních dat musí metoda 
+                atomicky selhat a vyhodit <code>IOException</code>. Formát vstupních dat je následující:
+                <ul>
+                    <li>Vstup je textový.</li>
+                    <li>Co vrchol, to jeden řádek.</li>
+                    <li>Každý řádek je ve formátu <i>"x y nazev vrcholu"</i>, tj. nejprve
+                        souřadnice vrcholu oddělené mezerou a poté název vrcholu 
+                        (název může obsahovat mezery). Viz např. soubor <i>pol-ok.txt</i> v balíku <i>test</i>.</li>
+                </ul>
+            </li>
+
+            <li>
+                Metoda <code>write(OutputStream)</code> zapíše vrcholy do daného
+                výstupního proudu. Výstupní formát je stejný jako v předchozím bodě.
+            </li>
+
+            <li>
+                Metody <code>write(File)</code> a <code>read(File)</code>
+                budou fungovat stejně jako předchozí, budou ale pracovat se souborem namísto 
+                vstupně-výstupního proudu. Vyhněte se zbytečnému opakování kódu!
+            </li>
+            
+            <li>
+                Pokud jste implementaci provedli bez chyb, tak po spuštění třídy <code>Draw</code> 
+                se na obrazovce vykreslí kosodélník s vrcholy "vrchol a", "vrchol b", "vrchol c", "vrchol d", "vrchol e", 
+                přičemž "vrchol d" a "vrchol e" mají stejné souřadnice (na zobrazení se názvy překrývají).
+            </li>
+        </ol>
+        
+        Testovací třída zapisuje pomocí metody <code>write(File)</code> do souboru <i>pol-out.txt</i>
+        v balíku <i>test</i>. Tam si můžete vizuálně ověřit výstup.
+        
+        <h3>Úkoly bez jednotkových testů:</h3>
+        <ol>
+            <li>
+                Vytvořte metodu <code>binaryWrite(OutputStream os)</code>, která bude do výstupního proudu 
+                zapisovat přímo, bez obalování writerem a přesto bude výsledek textový. Nápověda:
+                <ul>
+                    <li>
+                        Všechny souřadnice a ostatní text, který chceme zapsat binárně, musíme převést na pole bajtů.
+                        Třída <code>String</code> na to má přímo metodu.
+                    </li>
+                    <li>
+                        Je třeba vložit správný oddělovač konců řádků. Jak ho zjistit, viz přednášky, učebnice, google, ...
+                        Také znaky oddělovače konců řádků je nutné převést na bajty.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Odkomentujte kód ve třídě DrawExtra09. Spuštěním této třídy se v adresáři <code>demo</code> vytvoří
+                soubor <code>polygon.bin</code>, jehož obsah by měl být při správné implementaci čitelný. Polygon 
+                uložený v tomto souboru se navíc vykreslí na obrazovce.
+            </li>
+        </ol>
+
+    </body>
+</html>

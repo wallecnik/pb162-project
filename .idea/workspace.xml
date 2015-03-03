@@ -2,51 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="909f6030-ac61-4d07-9723-e0a33d0aa573" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/CollectionPolygon.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/Color.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/demo/DrawExtra06.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/demo/DrawExtra06.ctxt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/test/ProjectTest$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/test/ProjectTest$FailConnector.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/test/ProjectTest$TestConnector$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/test/ProjectTest$TestConnector.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/demo/DrawExtra06.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/demo/DrawExtra06.ctxt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/demo/DrawExtra06.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/geometry/ArrayPolygon.class" afterPath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/geometry/ArrayPolygon.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/ArrayPolygon.class" afterPath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/ArrayPolygon.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/geometry/Circle.class" afterPath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/geometry/Circle.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/geometry/Colored.class" afterPath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/geometry/Colored.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/Colored.class" afterPath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/Colored.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/LabeledPolygon.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/VertexInverseComparator.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/demo/DrawExtra07.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/demo/DrawExtra07.ctxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/demo/DrawExtra07.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/demo/DrawExtra07.ctxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/demo/DrawExtra07.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/demo/Draw.class" afterPath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/demo/Draw.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/demo/Draw.class" afterPath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/demo/Draw.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/geometry/GeneralRegularPolygon.class" afterPath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/geometry/GeneralRegularPolygon.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/GeneralRegularPolygon.class" afterPath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/GeneralRegularPolygon.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/db/MyStorage.class" afterPath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/db/MyStorage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/geometry/OlympicRings.class" afterPath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/geometry/OlympicRings.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/OlympicRings.class" afterPath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/OlympicRings.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/test/ProjectTest.class" afterPath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/test/ProjectTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/test/ProjectTest.class" afterPath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/test/ProjectTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/geometry/Vertex2D.class" afterPath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/geometry/Vertex2D.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/Vertex2D.class" afterPath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/Vertex2D.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/geometry/Colored.ctxt" afterPath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/geometry/Colored.ctxt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/Colored.ctxt" afterPath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/Colored.ctxt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/Colored.java" afterPath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/Colored.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/CollectionPolygon.java" afterPath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/CollectionPolygon.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/demo/Draw.ctxt" afterPath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/demo/Draw.ctxt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/demo/Draw.ctxt" afterPath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/demo/Draw.ctxt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/demo/Draw.java" afterPath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/demo/Draw.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/geometry/GeneralRegularPolygon.ctxt" afterPath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/geometry/GeneralRegularPolygon.ctxt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/GeneralRegularPolygon.ctxt" afterPath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/GeneralRegularPolygon.ctxt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/GeneralRegularPolygon.java" afterPath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/GeneralRegularPolygon.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/OlympicRings.java" afterPath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/OlympicRings.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/test/ProjectTest.ctxt" afterPath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/test/ProjectTest.ctxt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/test/ProjectTest.ctxt" afterPath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/test/ProjectTest.ctxt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/test/ProjectTest.java" afterPath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/test/ProjectTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/geometry/Vertex2D.ctxt" afterPath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/geometry/Vertex2D.ctxt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/Vertex2D.ctxt" afterPath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/Vertex2D.ctxt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/Vertex2D.java" afterPath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/Vertex2D.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/package.bluej" afterPath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/package.bluej" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/package.bluej" afterPath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/package.bluej" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/demo/package.bluej" afterPath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/demo/package.bluej" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/geometry/package.bluej" afterPath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/geometry/package.bluej" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/test/package.bluej" afterPath="$PROJECT_DIR$/out/production/pb162-project/cz/muni/fi/pb162/project/test/package.bluej" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cz/muni/fi/pb162/package.bluej" afterPath="$PROJECT_DIR$/src/cz/muni/fi/pb162/package.bluej" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/package.bluej" afterPath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/package.bluej" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/db/package.bluej" afterPath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/db/package.bluej" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/demo/package.bluej" afterPath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/demo/package.bluej" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/package.bluej" afterPath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/package.bluej" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/test/package.bluej" afterPath="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/test/package.bluej" />
@@ -107,8 +91,8 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <breakpoint_rules converted="true" />
     <ui_properties converted="true" />
+    <breakpoint_rules converted="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -129,25 +113,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CollectionPolygon.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/CollectionPolygon.java">
+      <file leaf-file-name="LabeledPolygon.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/LabeledPolygon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2010">
-              <caret line="90" column="53" selection-start-line="90" selection-start-column="53" selection-end-line="90" selection-end-column="53" />
+            <state vertical-scroll-proportion="0.892922" vertical-offset="1701" max-vertical-offset="3720">
+              <caret line="185" column="35" selection-start-line="185" selection-start-column="35" selection-end-line="185" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2609#2619#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Vertex2D.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/Vertex2D.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.85333335" vertical-offset="0" max-vertical-offset="1410">
-              <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -176,14 +149,18 @@
         <option value="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/demo/DrawExtra06.java" />
         <option value="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/db/DbUnreachableException.java" />
         <option value="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/db/MyStorage.java" />
-        <option value="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/Vertex2D.java" />
         <option value="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/Color.java" />
         <option value="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/GeneralRegularPolygon.java" />
         <option value="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/OlympicRings.java" />
         <option value="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/Colored.java" />
-        <option value="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/demo/Draw.java" />
-        <option value="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/CollectionPolygon.java" />
         <option value="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/demo/DrawExtra07.java" />
+        <option value="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/CollectionPolygon.java" />
+        <option value="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/demo/DrawExtra08.java" />
+        <option value="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/Vertex2D.java" />
+        <option value="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/VertexInverseComparator.java" />
+        <option value="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/demo/DrawExtra09.java" />
+        <option value="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/demo/Draw.java" />
+        <option value="$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/LabeledPolygon.java" />
       </list>
     </option>
   </component>
@@ -223,6 +200,16 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -233,16 +220,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="pb162-project" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -523,6 +500,44 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pb162" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pb162-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="muni" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pb162" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assignment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -550,6 +565,7 @@
     <property name="dynamic.classpath" value="false" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -614,17 +630,17 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="CabalRunConfiguration" factoryName="Haskell">
       <module name="" />
       <setting name="executableName" value="" />
       <setting name="parameters" value="" />
       <setting name="workingDir" value="" />
       <environmetVariables />
-      <method />
-    </configuration>
-    <configuration default="true" type="JarApplication" factoryName="JAR Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
@@ -641,19 +657,6 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -682,6 +685,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -738,29 +754,6 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
-    <configuration default="false" name="ProjectTest" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="pb162-project" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="cz.muni.fi.pb162.project.test" />
-      <option name="MAIN_CLASS_NAME" value="cz.muni.fi.pb162.project.test.ProjectTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
     <configuration default="false" name="Draw" type="Application" factoryName="Application" nameIsGenerated="true">
@@ -829,12 +822,64 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.ProjectTest" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Draw" />
-      <item index="2" class="java.lang.String" itemvalue="Application.DrawExtra05" />
-      <item index="3" class="java.lang.String" itemvalue="Application.DrawExtra06" />
-      <item index="4" class="java.lang.String" itemvalue="Application.DrawExtra07" />
+    <configuration default="false" name="DrawExtra08" type="Application" factoryName="Application" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="cz.muni.fi.pb162.project.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="cz.muni.fi.pb162.project.demo.DrawExtra08" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="pb162-project" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ProjectTest" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="pb162-project" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="cz.muni.fi.pb162.project.test" />
+      <option name="MAIN_CLASS_NAME" value="cz.muni.fi.pb162.project.test.ProjectTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/src" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="Application.Draw" />
+      <item index="1" class="java.lang.String" itemvalue="Application.DrawExtra05" />
+      <item index="2" class="java.lang.String" itemvalue="Application.DrawExtra06" />
+      <item index="3" class="java.lang.String" itemvalue="Application.DrawExtra08" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ProjectTest" />
+      <item index="5" class="java.lang.String" itemvalue="Application.DrawExtra07" />
     </list>
     <recent_temporary>
       <list size="1">
@@ -872,23 +917,21 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32870772" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cabal" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24946581" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17916666" sideWeight="0.9981835" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32802126" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24494143" sideWeight="0.9981835" order="0" side_tool="false" content_ui="combo" />
       <window_info id="simpleUML" active="false" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30191693" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32739726" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295053" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Code Iris" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32694355" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -896,6 +939,8 @@
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32959402" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295053" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -918,7 +963,11 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -926,94 +975,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/Measurable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cz/muni/fi/pb162/project/test/BasicRulesTester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/Square.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/Snowman.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/RegularOctagon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/Gauger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/Measurable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/Circle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12" vertical-offset="0" max-vertical-offset="1425">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/Triangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.1333333" vertical-offset="1410" max-vertical-offset="2535">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cz/muni/fi/pb162/project/assignment/06-readme.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1785">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cz/muni/fi/pb162/project/demo/Demo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20689656" vertical-offset="0" max-vertical-offset="725">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/com.springsource.org.junit/4.10.0/com.springsource.org.junit-4.10.0.jar!/org/junit/Assert.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="959" max-vertical-offset="3705">
-          <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/src.zip!/java/net/SocketException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="540">
@@ -1039,7 +1000,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.28242677" vertical-offset="0" max-vertical-offset="690">
           <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1047,7 +1007,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.18620689" vertical-offset="0" max-vertical-offset="725">
           <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1055,7 +1014,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.062068965" vertical-offset="0" max-vertical-offset="725">
           <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1063,7 +1021,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.16551724" vertical-offset="0" max-vertical-offset="725">
           <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1071,9 +1028,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.08275862" vertical-offset="120" max-vertical-offset="1125">
           <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1081,7 +1035,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.43448275" vertical-offset="0" max-vertical-offset="725">
           <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1089,7 +1042,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.41379312" vertical-offset="0" max-vertical-offset="725">
           <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1097,7 +1049,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.03448276" vertical-offset="205" max-vertical-offset="930">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1105,7 +1056,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.062068965" vertical-offset="0" max-vertical-offset="725">
           <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1113,15 +1063,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5586207" vertical-offset="0" max-vertical-offset="725">
           <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/SimplePolygon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.2551724" vertical-offset="1045" max-vertical-offset="1770">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1129,15 +1070,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3324138" vertical-offset="1034" max-vertical-offset="8745">
           <caret line="108" column="34" selection-start-line="108" selection-start-column="34" selection-end-line="108" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/src.zip!/java/util/Collection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3359" max-vertical-offset="6585">
-          <caret line="126" column="17" selection-start-line="126" selection-start-column="17" selection-end-line="126" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1145,7 +1077,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="501" max-vertical-offset="1035">
           <caret line="48" column="38" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1153,7 +1084,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1065" max-vertical-offset="2490">
           <caret line="105" column="27" selection-start-line="105" selection-start-column="20" selection-end-line="105" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1161,7 +1091,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.44025156" vertical-offset="0" max-vertical-offset="477">
           <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1169,14 +1098,213 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1575" max-vertical-offset="2565">
           <caret line="8" column="66" selection-start-line="8" selection-start-column="66" selection-end-line="8" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/Color.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18828452" vertical-offset="0" max-vertical-offset="478">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/CollectionPolygon.ctxt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="704">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/src.zip!/java/util/NavigableMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33238637" vertical-offset="681" max-vertical-offset="5955">
+          <caret line="94" column="17" selection-start-line="94" selection-start-column="17" selection-end-line="94" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/src.zip!/java/util/AbstractMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33238637" vertical-offset="426" max-vertical-offset="11295">
+          <caret line="67" column="52" selection-start-line="67" selection-start-column="52" selection-end-line="67" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1065" max-vertical-offset="16755">
+          <caret line="124" column="16" selection-start-line="124" selection-start-column="16" selection-end-line="124" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/Polygon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19176136" vertical-offset="0" max-vertical-offset="704">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/src.zip!/java/util/Set.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33238637" vertical-offset="681" max-vertical-offset="5520">
+          <caret line="84" column="17" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/src.zip!/java/lang/Math.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1846591" vertical-offset="4761" max-vertical-offset="21465">
+          <caret line="422" column="25" selection-start-line="422" selection-start-column="25" selection-end-line="422" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/src.zip!/java/util/Collections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33238637" vertical-offset="1656" max-vertical-offset="55350">
+          <caret line="152" column="57" selection-start-line="152" selection-start-column="57" selection-end-line="152" selection-end-column="57" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/src.zip!/java/util/Iterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="346" max-vertical-offset="1050">
+          <caret line="67" column="6" selection-start-line="67" selection-start-column="6" selection-end-line="67" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/src.zip!/java/util/SortedMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3301" max-vertical-offset="4005">
+          <caret line="262" column="18" selection-start-line="262" selection-start-column="18" selection-end-line="262" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/src.zip!/java/util/HashSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28977272" vertical-offset="966" max-vertical-offset="4155">
+          <caret line="101" column="11" selection-start-line="101" selection-start-column="11" selection-end-line="101" selection-end-column="11" />
+          <folding>
+            <element signature="e#3669#3670#0" expanded="false" />
+            <element signature="e#3706#3707#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/src.zip!/java/util/Comparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.296875" vertical-offset="961" max-vertical-offset="2265">
+          <caret line="101" column="17" selection-start-line="101" selection-start-column="17" selection-end-line="101" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/src.zip!/java/util/TreeSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.75641024" vertical-offset="4281" max-vertical-offset="7170">
+          <caret line="297" column="20" selection-start-line="297" selection-start-column="20" selection-end-line="297" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/SimplePolygon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1923077" vertical-offset="0" max-vertical-offset="1770">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/src.zip!/java/util/TreeMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.5213675" vertical-offset="0" max-vertical-offset="33615">
+          <caret line="141" column="11" selection-start-line="141" selection-start-column="11" selection-end-line="141" selection-end-column="11" />
+          <folding>
+            <element signature="e#5632#5633#0" expanded="false" />
+            <element signature="e#5665#5666#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/src.zip!/java/util/Collection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3681" max-vertical-offset="6585">
+          <caret line="292" column="12" selection-start-line="292" selection-start-column="12" selection-end-line="292" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3036" max-vertical-offset="6915">
+          <caret line="259" column="6" selection-start-line="259" selection-start-column="6" selection-end-line="259" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/Vertex2D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06410257" vertical-offset="0" max-vertical-offset="2145">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="8" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/VertexInverseComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="960">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/src.zip!/java/io/InputStreamReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="441" max-vertical-offset="2700">
+          <caret line="70" column="11" selection-start-line="70" selection-start-column="11" selection-end-line="70" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cz/muni/fi/pb162/project/test/pol-error.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cz/muni/fi/pb162/project/test/pol-ok.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cz/muni/fi/pb162/project/test/pol-out.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cz/muni/fi/pb162/project/test/ProjectTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1521" max-vertical-offset="2310">
-          <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.03846154" vertical-offset="558" max-vertical-offset="1260">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="13176" max-vertical-offset="45150">
+          <caret line="954" column="18" selection-start-line="954" selection-start-column="18" selection-end-line="954" selection-end-column="18" />
+          <folding>
+            <element signature="e#36782#36783#0" expanded="false" />
+            <element signature="e#36848#36849#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cz/muni/fi/pb162/project/demo/DrawExtra09.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
+          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
@@ -1185,62 +1313,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cz/muni/fi/pb162/project/demo/Draw.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5267" max-vertical-offset="5745">
-          <caret line="374" column="8" selection-start-line="374" selection-start-column="8" selection-end-line="374" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/src.zip!/java/util/Collections.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33263597" vertical-offset="15171" max-vertical-offset="55350">
-          <caret line="1048" column="8" selection-start-line="1048" selection-start-column="8" selection-end-line="1048" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="6390">
+          <caret line="431" column="38" selection-start-line="431" selection-start-column="38" selection-end-line="431" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cz/muni/fi/pb162/project/demo/DrawExtra07.ctxt">
+    <entry file="file://$PROJECT_DIR$/src/cz/muni/fi/pb162/project/demo/polygon.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="478">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cz/muni/fi/pb162/project/demo/DrawExtra07.java">
+    <entry file="file://$PROJECT_DIR$/src/cz/muni/fi/pb162/project/demo/polygon.bin">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68619245" vertical-offset="122" max-vertical-offset="600">
-          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="463">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/Color.java">
+    <entry file="file://$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/PolygonIO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18828452" vertical-offset="0" max-vertical-offset="478">
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-          <folding />
+        <state vertical-scroll-proportion="0.23097827" vertical-offset="0" max-vertical-offset="1104">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/CollectionPolygon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2010">
-          <caret line="90" column="53" selection-start-line="90" selection-start-column="53" selection-end-line="90" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2609#2619#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.10869565" vertical-offset="0" max-vertical-offset="1965">
+          <caret line="11" column="22" selection-start-line="8" selection-start-column="3" selection-end-line="11" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/Vertex2D.java">
+    <entry file="file://$PROJECT_DIR$/src/cz/muni/fi/pb162/project/geometry/LabeledPolygon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.85333335" vertical-offset="0" max-vertical-offset="1410">
-          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.892922" vertical-offset="1701" max-vertical-offset="3720">
+          <caret line="185" column="35" selection-start-line="185" selection-start-column="35" selection-end-line="185" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

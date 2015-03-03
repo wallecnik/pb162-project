@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * Implements abstract class polygon by storing the vertices in an array
+ * Implements abstract class polygon by storing the vertices in collection list
  *
  * @author Wallecnik
  * @version 20.11.2014

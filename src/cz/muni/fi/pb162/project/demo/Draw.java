@@ -2,6 +2,8 @@ package cz.muni.fi.pb162.project.demo;
 
 import java.awt.Graphics;
 import java.awt.Polygon;
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JFrame;
@@ -11,14 +13,12 @@ import cz.muni.fi.pb162.project.geometry.Circle;
 import cz.muni.fi.pb162.project.geometry.SimplePolygon;
 import cz.muni.fi.pb162.project.geometry.Triangle;
 import cz.muni.fi.pb162.project.geometry.RegularPolygon;
-import cz.muni.fi.pb162.project.geometry.CollectionPolygon;
 import cz.muni.fi.pb162.project.geometry.Color;
 import cz.muni.fi.pb162.project.geometry.Colored;
 import cz.muni.fi.pb162.project.geometry.Vertex2D;
+import cz.muni.fi.pb162.project.geometry.LabeledPolygon;
 
 /**
- * !!! ODKOMENTOVAT RADKY V MAIN() !!!
- * 
  * Trida umoznujici vykresleni doposud dokoncenych grafickych objektu (bod, kruznice, trojuhelnik).
  * 
  * @author Bc. Pavel Beran (255625)
@@ -27,7 +27,9 @@ import cz.muni.fi.pb162.project.geometry.Vertex2D;
  */
 
 public class Draw extends JFrame {
-
+    
+    private static final String TEST_FILE = "cz/muni/fi/pb162/project/demo/polygon.txt";
+    
     /**
      * Znaci polovinu delky usecky pro vykresleni bodu.
      */
@@ -35,11 +37,12 @@ public class Draw extends JFrame {
 
     protected JPanel panel;
     
-    private List<Vertex2D> vertices      = new ArrayList<Vertex2D>();
-    private List<Triangle> triangles     = new ArrayList<Triangle>();
-    private List<Circle>   circles       = new ArrayList<Circle>();
-    private List<RegularPolygon> ngons   = new ArrayList<RegularPolygon>();
-    private List<SimplePolygon> polygons = new ArrayList<SimplePolygon>();
+    private List<Vertex2D> vertices        = new ArrayList<Vertex2D>();
+    private List<Triangle> triangles       = new ArrayList<Triangle>();
+    private List<Circle>   circles         = new ArrayList<Circle>();
+    private List<RegularPolygon> ngons     = new ArrayList<RegularPolygon>();
+    private List<SimplePolygon> polygons   = new ArrayList<SimplePolygon>();
+    private List<LabeledPolygon> lpolygons = new ArrayList<LabeledPolygon>();
     
     private java.awt.Color vertexColor;
     private java.awt.Color triangleColor;
@@ -223,6 +226,37 @@ public class Draw extends JFrame {
         return true;
     }
     
+    public boolean paintLabeledPolygon(LabeledPolygon pol) {
+        int width = panel.getWidth();
+        int height = panel.getHeight();
+        int halfX = width/2;
+        int halfY = height/2;
+        
+        int minX = Integer.MAX_VALUE;
+        int maxX = Integer.MIN_VALUE;
+        int minY = Integer.MAX_VALUE;
+        int maxY = Integer.MIN_VALUE;
+        
+        for (int i = 0; i < pol.getNumVertices(); i++) {
+            minX = (int) Math.min(minX, pol.getVertex(i%pol.getNumVertices()).getX());
+            maxX = (int) Math.min(maxX, pol.getVertex(i%pol.getNumVertices()).getX());
+            minY = (int) Math.min(minY, pol.getVertex(i%pol.getNumVertices()).getY());
+            maxY = (int) Math.min(maxY, pol.getVertex(i%pol.getNumVertices()).getY());
+        }
+        
+        minX = width - ((int) Math.rint(halfX - minX));
+        maxX = width - ((int) Math.rint(halfX - maxX));
+        minY = (int) Math.rint(halfY - minY);
+        maxY = (int) Math.rint(halfY - maxY);
+        
+        if (minX < 0 || maxX > width || minY < 0 || maxY > height) {
+            return false;
+        }
+        
+        lpolygons.add(pol);
+        return true;
+    }
+    
     protected void paintVertex(Graphics g, Vertex2D v) {
         int width = panel.getWidth();
         int height = panel.getHeight();
@@ -314,6 +348,34 @@ public class Draw extends JFrame {
         g.drawPolygon(xVertex, yVertex, polygon.getNumVertices()+1);
     }
     
+    protected void paintLabeledPolygon(Graphics g, LabeledPolygon polygon) {
+        int width = panel.getWidth();
+        int height = panel.getHeight();
+        int halfX = width/2;
+        int halfY = height/2;
+        
+        int[] yVertex = new int[polygon.getNumVertices()+1];
+        int[] xVertex = new int[polygon.getNumVertices()+1];
+        
+        for (int i = 0; i <= polygon.getNumVertices(); i++) {
+            xVertex[i] = width - ((int) Math.rint(halfX - polygon.getVertex(i%polygon.getNumVertices()).getX()));
+            yVertex[i] = (int) Math.rint(halfY - polygon.getVertex(i%polygon.getNumVertices()).getY());
+        }
+        
+        //setColor(g, polygon, polygonColor);
+        g.setColor(java.awt.Color.BLUE);
+        g.drawPolygon(xVertex, yVertex, polygon.getNumVertices()+1);
+        
+        g.setColor(java.awt.Color.RED);
+        int j = 0;
+        for (String label : polygon.getLabels()) {
+            int x = (xVertex[j] < halfX) ? xVertex[j] - 10 : xVertex[j] + 10;
+            int y = (yVertex[j] < halfY) ? yVertex[j] + 10 : yVertex[j] + 10;
+            g.drawString(label, x, y);
+            j++;
+        }
+    }
+
     protected void setColor(Graphics g, Solid obj, java.awt.Color defaultColor) {
         g.setColor(defaultColor);
         
@@ -360,19 +422,16 @@ public class Draw extends JFrame {
         for (SimplePolygon pol : polygons) {
             paintSimplePolygon(g, pol);
         }
+        for (LabeledPolygon pol : lpolygons) {
+            paintLabeledPolygon(g, pol);
+        }
     }
     
-    public static void main(String[] args) {
-        Vertex2D[] vert1 = {
-            new Vertex2D(-100,-100),
-            new Vertex2D( -40,  10),
-            new Vertex2D(  50,  20),
-            new Vertex2D(  10, -20),
-            new Vertex2D(  60, -40)
-        };
-        SimplePolygon pol = new CollectionPolygon(vert1);
+    public static void main(String[] args) throws IOException {
+        LabeledPolygon pol = new LabeledPolygon();
+        pol.read(new File(TEST_FILE));
         Draw canvas = new Draw();
-        canvas.paintSimplePolygon(pol);
+        canvas.paintLabeledPolygon(pol);
         canvas.startPainting();
     }
 }
